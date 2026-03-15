@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- colors.xml — Full color palette for the Hunter app -->
+<resources>
+
+    <!-- Primary Colors -->
+    <color name="primary_purple">#667EEA</color>
+    <color name="primary_purple_dark">#5568D3</color>
+    <color name="primary_purple_light">#8B9FFF</color>
+    <color name="purple_primary">#7E57C2</color>
+
+    <color name="primary_blue">#4FACFE</color>
+    <color name="primary_blue_dark">#3D8FE3</color>
+    <color name="primary_blue_light">#7AC5FF</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_blue">#4FACFE</color>
+    <color name="accent_blue_dark">#3D8FE3</color>
+    <color name="accent_orange">#FFB75E</color>
+    <color name="accent_pink">#F093FB</color>
+    <color name="accent_cyan">#00F2FE</color>
+    <color name="accent_yellow">#ED8F03</color>
+    <color name="accent_red">#F5576C</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_gold">#FFD700</color>
+
+    <!-- Backgrounds -->
+    <color name="background_light">#F8F9FA</color>
+    <color name="background_dark">#1A1D29</color>
+    <color name="background_color">#F8F9FA</color>
+
+    <!-- Surfaces (cards, containers) -->
+    <color name="surface_1">#FFFFFF</color>
+    <color name="surface_2">#F3F4F6</color>
+    <color name="surface_3">#E5E7EB</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_light">#1F2937</color>
+    <color name="text_secondary_light">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+    <color name="text_disabled">#D1D5DB</color>
+
+    <color name="text_primary_dark">#F9FAFB</color>
+    <color name="text_secondary_dark">#D1D5DB</color>
+
+    <!-- Legacy text colors (kept for compatibility) -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#999999</color>
+    <color name="text_hint">#CCCCCC</color>
+
+    <!-- Status Colors -->
+    <color name="status_saved">#10B981</color>
+    <color name="status_saved_light">#D1FAE5</color>
+
+    <color name="status_applied">#3B82F6</color>
+    <color name="status_applied_light">#DBEAFE</color>
+
+    <color name="status_interview">#F59E0B</color>
+    <color name="status_interview_light">#FEF3C7</color>
+    <color name="status_interview_start">#FF9A56</color>
+    <color name="status_interview_end">#FFCD3C</color>
+
+    <color name="status_offer">#8B5CF6</color>
+    <color name="status_offer_light">#EDE9FE</color>
+
+    <color name="status_rejected">#EF4444</color>
+    <color name="status_rejected_light">#FEE2E2</color>
+    <color name="status_rejected_start">#FF6B6B</color>
+    <color name="status_rejected_end">#EE5A6F</color>
+
+    <!-- Borders and Dividers -->
+    <color name="border_light">#E5E7EB</color>
+    <color name="border_medium">#D1D5DB</color>
+    <color name="border_dark">#9CA3AF</color>
+    <color name="divider">#E5E7EB</color>
+    <color name="divider_color">#E5E5E5</color>
+
+    <!-- Icons -->
+    <color name="icon_active">#667EEA</color>
+    <color name="icon_inactive">#9CA3AF</color>
+    <color name="icon_disabled">#D1D5DB</color>
+    <color name="icon_gray">#999999</color>
+
+    <!-- System Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="error">#EF4444</color>
+    <color name="error_stroke">#44EF4444</color>
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="info">#3B82F6</color>
+
+    <!-- Glassmorphism Effect -->
+    <color name="glass_surface">#E6FFFFFF</color>
+    <color name="glass_border">#33FFFFFF</color>
+    <color name="glass_background">#4DFFFFFF</color>
+    <color name="glass_stroke">#66FFFFFF</color>
+    <color name="glass_bg">#33FFFFFF</color>
+
+    <!-- Frosted glass cards -->
+    <color name="card_background_frosted">#DDFFFFFF</color>
+    <color name="card_stroke_frosted">#CCFFFFFF</color>
+
+    <!-- Overlays -->
+    <color name="overlay_light">#0D000000</color>
+    <color name="overlay_medium">#4D000000</color>
+    <color name="overlay_dark">#99000000</color>
+
+    <!-- Shadows -->
+    <color name="shadow_dark">#60000000</color>
+    <color name="shadow_medium">#80000000</color>
+    <color name="shadow_light">#40000000</color>
+    <color name="shadow_color">#80000000</color>
+
+    <!-- Button Gradients -->
+    <!-- Primary (purple-blue premium) -->
+    <color name="button_gradient_start">#7E57C2</color>
+    <color name="button_gradient_center">#5E35B1</color>
+    <color name="button_gradient_end">#3949AB</color>
+
+    <!-- Pressed state (darker) -->
+    <color name="button_gradient_pressed_start">#5E35B1</color>
+    <color name="button_gradient_pressed_center">#512DA8</color>
+    <color name="button_gradient_pressed_end">#283593</color>
+
+    <!-- Focused state (lighter) -->
+    <color name="button_gradient_focused_start">#9575CD</color>
+    <color name="button_gradient_focused_center">#7E57C2</color>
+    <color name="button_gradient_focused_end">#5C6BC0</color>
+
+    <!-- Button strokes -->
+    <color name="button_stroke_default">#B3FFFFFF</color>
+    <color name="button_stroke_pressed">#FFFFFF</color>
+
+    <!-- Social Login -->
+    <color name="social_google">#EA4335</color>
+    <color name="social_linkedin">#0A66C2</color>
+
+    <!-- Legacy Colors (kept for compatibility) -->
+    <color name="navy_primary">#2C3E50</color>
+    <color name="navy_dark">#1A252F</color>
+    <color name="navy_light">#34495E</color>
+    <color name="gold">#F39C12</color>
+    <color name="gold_light">#F1C40F</color>
+
+    <color name="secondary_blue">#764BA2</color>
+    <color name="switch_track">#80FFFFFF</color>
+
+    <!-- Statistics Accents -->
+    <color name="stat_accent_violet">#7C3AED</color>
+    <color name="stat_accent_blue">#2563EB</color>
+    <color name="stat_accent_teal">#0D9488</color>
+    <color name="stat_accent_rose">#BE185D</color>
+    <color name="stat_accent_amber">#FCD34D</color>
+    <color name="stat_section_glow">#80FCD34D</color>
+
+    <!-- Screen Accents (per-screen theming) -->
+    <color name="accent_indigo">#4F46E5</color>
+    <color name="accent_indigo_light">#818CF8</color>
+    <color name="accent_teal">#0F766E</color>
+    <color name="accent_teal_light">#2DD4BF</color>
+    <color name="accent_rose">#BE185D</color>
+    <color name="accent_rose_light">#FB7185</color>
+    <color name="accent_amber">#B45309</color>
+    <color name="accent_amber_light">#F59E0B</color>
+
+    <!-- Opacity Overlays (white-based) -->
+    <color name="glass_stroke_light">#40FFFFFF</color>
+    <color name="text_secondary_white">#CCffffff</color>
+    <color name="text_tertiary_white">#90FFFFFF</color>
+    <color name="text_hint_white">#80FFFFFF</color>
+    <color name="divider_light">#30FFFFFF</color>
+    <color name="tab_text_unselected">#99FFFFFF</color>
+    <color name="nav_stroke">#50FFFFFF</color>
+    <color name="drawer_divider">#35FFFFFF</color>
+    <color name="delete_red">#FF5C7A</color>
+
+    <!-- Per-screen hint colors -->
+    <color name="hint_rose">#DDFB7185</color>
+    <color name="hint_rose_focused">#FB7185</color>
+    <color name="hint_purple">#B3A78BFA</color>
+    <color name="hint_purple_focused">#A78BFA</color>
+    <color name="hint_blue">#B360A5FA</color>
+    <color name="hint_blue_focused">#60A5FA</color>
+    <color name="hint_cyan">#B367E8F9</color>
+    <color name="hint_cyan_focused">#67E8F9</color>
+    <color name="hint_indigo">#B3818CF8</color>
+    <color name="hint_indigo_focused">#818CF8</color>
+
+    <!-- Strokes and glows (semi-transparent accents) -->
+    <color name="purple_stroke">#44667EEA</color>
+    <color name="purple_glow">#667C3AED</color>
+    <color name="indigo_stroke">#44818CF8</color>
+    <color name="blue_stroke">#442563EB</color>
+    <color name="error_glow">#66EF4444</color>
+    <color name="success_stroke">#4410B981</color>
+    <color name="success_glow">#6610B981</color>
+    <color name="indigo_glow">#664F46E5</color>
+    <color name="blue_glow">#662563EB</color>
+    <color name="rose_stroke">#44BE185D</color>
+    <color name="rose_glow">#66BE185D</color>
+    <color name="teal_stroke">#440F766E</color>
+    <color name="teal_glow">#660F766E</color>
+
+    <!-- Main screen card strokes -->
+    <color name="main_card_stroke_indigo">#66818CF8</color>
+    <color name="main_card_stroke_teal">#662DD4BF</color>
+    <color name="main_card_stroke_rose">#66F472B6</color>
+    <color name="main_card_stroke_amber">#66FCD34D</color>
+
+    <!-- Login screen strokes -->
+    <color name="login_stroke_purple">#4D8B68FF</color>
+    <color name="login_stroke_purple_strong">#668B68FF</color>
+    <color name="login_stroke_blue">#4D60A5FA</color>
+
+    <!-- Specific screen backgrounds -->
+    <color name="dialog_background">#2A1860</color>
+    <color name="drawer_background">#2A1880</color>
+    <color name="cv_file_background">#1A1A2E</color>
+    <color name="cv_file_stroke">#33FFFFFF</color>
+    <color name="cv_file_highlight">#E1BEE7</color>
+
+</resources>

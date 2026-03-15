@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Job List — daily quote, stats, search, and RecyclerView of jobs with add FAB -->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.JobListActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_dark_purple">
+
+        <include layout="@layout/common_header" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/job_list_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="80dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Daily Motivation -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/daily_quote_card"
+                        style="@style/GlassCard"
+                        android:layout_marginBottom="20dp"
+                        app:strokeColor="@color/accent_indigo"
+                        app:strokeWidth="1.5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingVertical="18dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="16dp">
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:contentDescription="@string/daily_motivation"
+                                android:src="@drawable/ic_lightbulb"
+                                app:tint="@color/accent_indigo_light" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="14dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="@string/daily_motivation"
+                                    android:textColor="@color/accent_indigo_light"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/daily_quote_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Statistics Section Title -->
+                    <TextView
+                        style="@style/SectionTitle"
+                        android:shadowColor="@color/accent_indigo"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:text="@string/statistics" />
+
+                    <include layout="@layout/section_job_stats" />
+
+                    <!-- Search Field -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/search_layout"
+                        style="@style/GlassInput.Indigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxStrokeWidth="1dp"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/accent_indigo_light"
+                        app:startIconDrawable="@drawable/ic_search"
+                        app:startIconTint="@color/accent_indigo_light">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/search_text"
+                            style="@style/GlassInputEditText.Indigo"
+                            android:hint="@string/search_jobs"
+                            android:inputType="text"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Recent Applications Section Title -->
+                    <TextView
+                        style="@style/SectionTitle"
+                        android:shadowColor="@color/accent_indigo"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:text="@string/recent_applications" />
+
+                    <!-- Jobs RecyclerView -->
+
+                    <!-- Empty State -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/job_list_LST_jobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/job_item" />
+
+                    <include
+                        android:id="@+id/job_list_empty_state"
+                        layout="@layout/empty_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <!-- Progress Bar -->
+                    <ProgressBar
+                        android:id="@+id/job_list_progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:indeterminateTint="@color/accent_indigo_light"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <!-- FAB -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/job_list_FAB"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="110dp"
+            android:background="@drawable/button_gradient_indigo"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:stateListAnimator="@null"
+            android:text="@string/add_job"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@null"
+            app:cornerRadius="32dp"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="@color/white" />
+
+        <include layout="@layout/bottom_navigation" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        layout="@layout/drawer_menu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

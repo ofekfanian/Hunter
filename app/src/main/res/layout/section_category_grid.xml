@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Multi-select category buttons (2 per row) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_technical"
+            style="@style/CategoryRectChip"
+            android:checked="true"
+            android:text="@string/category_technical" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_behavioral"
+            style="@style/CategoryRectChip"
+            android:layout_marginStart="6dp"
+            android:text="@string/category_behavioral" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_situational"
+            style="@style/CategoryRectChip"
+            android:text="@string/category_situational" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_system_design"
+            style="@style/CategoryRectChip"
+            android:layout_marginStart="6dp"
+            android:text="@string/category_system_design" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_leadership"
+            style="@style/CategoryRectChip"
+            android:text="@string/category_leadership" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_coding"
+            style="@style/CategoryRectChip"
+            android:layout_marginStart="6dp"
+            android:text="@string/category_coding" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_hr_culture"
+            style="@style/CategoryRectChip"
+            android:text="@string/category_hr_culture" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chip_problem_solving"
+            style="@style/CategoryRectChip"
+            android:layout_marginStart="6dp"
+            android:text="@string/category_problem_solving" />
+
+    </LinearLayout>
+
+</LinearLayout>

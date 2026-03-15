@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Deep indigo gradient for card backgrounds -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#1E1B4B"
+        android:centerColor="#3730A3"
+        android:endColor="#4F46E5"
+        android:type="linear" />
+</shape>

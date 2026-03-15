@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Profile stats row — total applications, interviews, and offers -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <!-- Total Applications -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/StatCard"
+        android:layout_marginEnd="6dp"
+        app:strokeColor="@color/primary_purple"
+        app:strokeWidth="1.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                style="@style/StatCardIcon"
+                android:src="@drawable/ic_work"
+                app:tint="@color/primary_purple" />
+
+            <TextView
+                android:id="@+id/stat_total_value"
+                style="@style/StatCardValue"
+                tools:text="12" />
+
+            <TextView
+                style="@style/StatCardLabel"
+                android:text="@string/stat_total_apps" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Interviews -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/StatCard"
+        android:layout_marginHorizontal="6dp"
+        app:strokeColor="@color/primary_purple"
+        app:strokeWidth="1.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                style="@style/StatCardIcon"
+                android:src="@drawable/ic_calendar"
+                app:tint="@color/primary_purple" />
+
+            <TextView
+                android:id="@+id/stat_interviews_value"
+                style="@style/StatCardValue"
+                tools:text="5" />
+
+            <TextView
+                style="@style/StatCardLabel"
+                android:text="@string/stat_interviews" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Offers -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/StatCard"
+        android:layout_marginStart="6dp"
+        app:strokeColor="@color/primary_purple"
+        app:strokeWidth="1.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                style="@style/StatCardIcon"
+                android:src="@drawable/ic_check_circle"
+                app:tint="@color/primary_purple" />
+
+            <TextView
+                android:id="@+id/stat_offers_value"
+                style="@style/StatCardValue"
+                tools:text="2" />
+
+            <TextView
+                style="@style/StatCardLabel"
+                android:text="@string/stat_offers" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

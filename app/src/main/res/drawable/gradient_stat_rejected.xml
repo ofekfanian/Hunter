@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rose gradient for the "Rejected" stat card -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#1A0010"
+        android:centerColor="#831843"
+        android:endColor="#BE185D"
+        android:type="linear" />
+</shape>

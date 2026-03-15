@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single interview card — company logo, date/time, type badge, location, reminder -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/glass_background"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/blue_stroke"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Top Row: Logo + Company + Position + Notification -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Company Logo Circle -->
+            <FrameLayout
+                android:id="@+id/interview_logo_container"
+                android:layout_width="48dp"
+                android:layout_height="48dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_company_logo_elegant" />
+
+                <TextView
+                    android:id="@+id/interview_item_company_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/initial_g"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:text="G" />
+
+            </FrameLayout>
+
+            <!-- Company + Position -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/interview_item_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLines="1"
+                    android:text="@string/company_google"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:text="Google" />
+
+                <TextView
+                    android:id="@+id/interview_item_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:alpha="0.7"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:maxLines="1"
+                    android:text="@string/position_android_dev"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    tools:text="Senior Android Developer" />
+
+            </LinearLayout>
+
+            <!-- Notification Icon -->
+            <ImageView
+                android:id="@+id/interview_item_notification_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="@string/notification_icon"
+                android:src="@drawable/ic_notification"
+                app:tint="@color/stat_accent_blue" />
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/drawer_divider" />
+
+        <!-- Date + Time Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/calendar_icon"
+                android:src="@drawable/ic_calendar"
+                app:tint="@color/stat_accent_blue" />
+
+            <TextView
+                android:id="@+id/interview_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:alpha="0.7"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/date_sample"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="15/01/2025" />
+
+            <TextView
+                android:id="@+id/interview_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/time_sample"
+                android:textColor="@color/stat_accent_blue"
+                android:textSize="13sp"
+                tools:text="14:00" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Reminder -->
+            <ImageView
+                android:id="@+id/interview_item_reminder_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/reminder_icon"
+                android:src="@drawable/ic_alarm"
+                app:tint="@color/stat_accent_amber" />
+
+            <TextView
+                android:id="@+id/interview_item_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:alpha="0.6"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/reminder_1hour"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="1 hour" />
+
+        </LinearLayout>
+
+        <!-- Type + Location Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Type Badge -->
+            <TextView
+                android:id="@+id/interview_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_blue"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/interview_type_video"
+                android:textColor="@color/stat_accent_blue"
+                android:textSize="11sp"
+                tools:text="Video" />
+
+            <!-- Location -->
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="10dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_location"
+                app:tint="@color/stat_accent_blue" />
+
+            <TextView
+                android:id="@+id/interview_item_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:alpha="0.6"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:text="@string/location_sample"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="Zoom Meeting" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

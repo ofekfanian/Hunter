@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indigo gradient for the Jobs main card -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#1E1B4B"
+        android:centerColor="#4F46E5"
+        android:endColor="#818CF8"
+        android:type="linear" />
+</shape>

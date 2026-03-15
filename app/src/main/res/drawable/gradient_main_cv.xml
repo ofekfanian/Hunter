@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teal gradient for the CV main card -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#042F2E"
+        android:centerColor="#0F766E"
+        android:endColor="#2DD4BF"
+        android:type="linear" />
+</shape>

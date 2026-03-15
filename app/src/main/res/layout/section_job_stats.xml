@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Job stats section — 2x2 grid: total jobs, applied, interviews, offers -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Statistics Cards Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- Total Jobs -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_marginEnd="6dp"
+            app:strokeColor="@color/accent_indigo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_card_indigo"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_work"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_total_value"
+                    style="@style/StatCardValue"
+                    android:textSize="32sp"
+                    tools:text="24" />
+
+                <TextView
+                    style="@style/StatCardLabel"
+                    android:text="@string/total_jobs"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Applied -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_marginStart="6dp"
+            app:strokeColor="@color/accent_indigo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_card_indigo"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_send"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_applied_value"
+                    style="@style/StatCardValue"
+                    android:textSize="32sp"
+                    tools:text="18" />
+
+                <TextView
+                    style="@style/StatCardLabel"
+                    android:text="@string/applied"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <!-- Statistics Cards Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- Interviews -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_marginEnd="6dp"
+            app:strokeColor="@color/accent_indigo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_card_indigo"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_interviews_value"
+                    style="@style/StatCardValue"
+                    android:textSize="32sp"
+                    tools:text="5" />
+
+                <TextView
+                    style="@style/StatCardLabel"
+                    android:text="@string/interviews"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Offers -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_marginStart="6dp"
+            app:strokeColor="@color/accent_indigo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_card_indigo"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_trophy"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_offers_value"
+                    style="@style/StatCardValue"
+                    android:textSize="32sp"
+                    tools:text="2" />
+
+                <TextView
+                    style="@style/StatCardLabel"
+                    android:text="@string/offers"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>

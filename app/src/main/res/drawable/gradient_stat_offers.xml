@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teal gradient for the "Offers" stat card -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#051214"
+        android:centerColor="#134E4A"
+        android:endColor="#0D9488"
+        android:type="linear" />
+</shape>

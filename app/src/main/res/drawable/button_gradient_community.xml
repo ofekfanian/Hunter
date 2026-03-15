@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rose gradient button for Community screen actions -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#500724"
+        android:centerColor="#BE185D"
+        android:endColor="#F472B6"
+        android:type="linear" />
+    <corners android:radius="12dp" />
+    <stroke
+        android:width="1.5dp"
+        android:color="#F9A8D4" />
+</shape>

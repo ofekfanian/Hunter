@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Statistics overview section — 2x2 grid: applied, interviews, offers, rejected -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Stats Row 1: Applied + Interviews -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- Applied Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/statistics_card_applied"
+            style="@style/StatCard"
+            android:layout_marginEnd="6dp"
+            app:strokeColor="@color/stat_accent_violet">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_stat_applied"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:contentDescription="@string/statistics_applied"
+                    android:src="@drawable/ic_work"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_value_applied"
+                    style="@style/StatCardValue"
+                    tools:text="12" />
+
+                <TextView
+                    android:id="@+id/stat_label_applied"
+                    style="@style/StatCardLabel"
+                    android:text="@string/statistics_applied" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Interviews Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/statistics_card_interview"
+            style="@style/StatCard"
+            android:layout_marginStart="6dp"
+            app:strokeColor="@color/stat_accent_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_stat_interviews"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:contentDescription="@string/statistics_interview"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_value_interview"
+                    style="@style/StatCardValue"
+                    tools:text="5" />
+
+                <TextView
+                    android:id="@+id/stat_label_interview"
+                    style="@style/StatCardLabel"
+                    android:text="@string/statistics_interview" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <!-- Stats Row 2: Offers + Rejected -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- Offers Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/statistics_card_offer"
+            style="@style/StatCard"
+            android:layout_marginEnd="6dp"
+            app:strokeColor="@color/stat_accent_teal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_stat_offers"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:contentDescription="@string/statistics_offer"
+                    android:src="@drawable/ic_check_circle"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_value_offer"
+                    style="@style/StatCardValue"
+                    tools:text="3" />
+
+                <TextView
+                    android:id="@+id/stat_label_offer"
+                    style="@style/StatCardLabel"
+                    android:text="@string/statistics_offer" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Rejected Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/statistics_card_rejected"
+            style="@style/StatCard"
+            android:layout_marginStart="6dp"
+            app:strokeColor="@color/stat_accent_rose">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_stat_rejected"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    style="@style/StatCardIcon"
+                    android:contentDescription="@string/statistics_rejected"
+                    android:src="@drawable/ic_close"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/stat_value_rejected"
+                    style="@style/StatCardValue"
+                    tools:text="2" />
+
+                <TextView
+                    android:id="@+id/stat_label_rejected"
+                    style="@style/StatCardLabel"
+                    android:text="@string/statistics_rejected" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>

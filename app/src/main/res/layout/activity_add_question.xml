@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add community question/tip — company info, question text, category grid, anonymity toggle -->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddQuestionActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_dark_purple">
+
+        <include layout="@layout/common_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Basic Information -->
+                <TextView
+                    style="@style/SectionTitle"
+                    android:text="@string/basic_information"
+                    android:shadowColor="@color/stat_accent_rose"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/GlassCard"
+                    android:layout_marginBottom="20dp"
+                    app:strokeColor="@color/stat_accent_rose"
+                    app:strokeWidth="1.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/company_layout"
+                            style="@style/GlassInput.Rose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            app:startIconDrawable="@drawable/ic_work"
+                            app:startIconTint="@color/stat_accent_rose">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/company_text"
+                                style="@style/GlassInputEditText.Rose"
+                                android:hint="@string/hint_company" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/position_layout"
+                            style="@style/GlassInput.Rose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            app:startIconDrawable="@drawable/ic_work"
+                            app:startIconTint="@color/stat_accent_rose">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/position_text"
+                                style="@style/GlassInputEditText.Rose"
+                                android:hint="@string/hint_position" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Question Details -->
+                <TextView
+                    style="@style/SectionTitle"
+                    android:text="@string/question_details"
+                    android:shadowColor="@color/stat_accent_rose"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/GlassCard"
+                    android:layout_marginBottom="20dp"
+                    app:strokeColor="@color/stat_accent_rose"
+                    app:strokeWidth="1.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/question_layout"
+                            style="@style/GlassInput.Rose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            app:startIconDrawable="@drawable/ic_edit"
+                            app:startIconTint="@color/stat_accent_rose">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/question_text"
+                                style="@style/GlassInputEditText.Rose"
+                                android:hint="@string/interview_question"
+                                android:inputType="textMultiLine"
+                                android:minLines="3" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/answer_layout"
+                            style="@style/GlassInput.Rose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            app:startIconDrawable="@drawable/ic_edit"
+                            app:startIconTint="@color/stat_accent_rose">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/answer_text"
+                                style="@style/GlassInputEditText.Rose"
+                                android:hint="@string/answer_optional"
+                                android:inputType="textMultiLine"
+                                android:minLines="3" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Options: Difficulty + Category -->
+                <TextView
+                    style="@style/SectionTitle"
+                    android:text="@string/additional_details"
+                    android:shadowColor="@color/stat_accent_rose"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/GlassCard.LargeMargin"
+                    app:strokeColor="@color/stat_accent_rose"
+                    app:strokeWidth="1.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <!-- Type: Question or Tip toggle -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_forum"
+                                app:tint="@color/stat_accent_rose" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="@string/post_type"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <com.google.android.material.button.MaterialButtonToggleGroup
+                                android:id="@+id/type_toggle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:checkedButton="@id/btn_type_question"
+                                app:selectionRequired="true"
+                                app:singleSelection="true">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_type_question"
+                                    style="@style/TypeToggleButton"
+                                    android:text="@string/type_question" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_type_tip"
+                                    style="@style/TypeToggleButton"
+                                    android:text="@string/type_tip" />
+
+                            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                        </LinearLayout>
+
+                        <!-- Divider -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@color/divider_light" />
+
+                        <!-- Anonymity: icon + label + Switch -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_visibility_off"
+                                app:tint="@color/stat_accent_rose" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="@string/question_anonymity"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/anonymity_chips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                app:thumbTint="@color/white"
+                                app:trackTint="@color/stat_accent_rose" />
+
+                        </LinearLayout>
+
+                        <!-- Divider -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@color/divider_light" />
+
+                        <!-- Category label -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/ic_community"
+                                android:layout_marginEnd="8dp"
+                                app:tint="@color/stat_accent_rose"
+                                android:contentDescription="@null" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="@string/question_category"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <include layout="@layout/section_category_grid" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Submit Button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/button_gradient_community"
+                    android:drawableStart="@drawable/ic_forum"
+                    android:drawablePadding="12dp"
+                    android:elevation="12dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:letterSpacing="0.05"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/submit_question"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    tools:ignore="VisualLintButtonSize,RtlSymmetry" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:indeterminateTint="@color/stat_accent_rose"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        layout="@layout/drawer_menu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

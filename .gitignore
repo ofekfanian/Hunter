@@ -1,0 +1,80 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Gradle files
+.gradle/
+build/
+*/build/
+**/build/
+app/build/
+local.properties
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+*.iws
+/out/
+
+# OS files
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Keystore files
+*.jks
+*.keystore
+keystore.properties
+
+# Firebase & Google Services
+google-services.json
+app/google-services.json
+
+# Secrets
+secrets.xml
+api_keys.xml
+
+# Backup files
+*~
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# Log files
+*.log
+
+# Lint
+lint-baseline.xml
+**/lint-baseline.xml
+
+# Kotlin
+.kotlin/
+
+# Other
+Invalidate/
+bin/
+gen/
+out/
+release/
+/captures
+.externalNativeBuild
+.cxx
+obj/
+proguard/
+
+# Keep Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Claude Code
+.claude/
+
+# Temp / scratch files
+hunter_project_for_ai.txt
+Invalidate/
+check_unused.sh.save
+activity_edit_job.xml

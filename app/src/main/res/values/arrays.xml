@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- arrays.xml — Dropdown and list data for the Hunter app -->
+<resources>
+    <!-- Job Application Statuses -->
+    <string-array name="job_statuses">
+        <item>Saved</item>
+        <item>Applied</item>
+        <item>Interview</item>
+        <item>Offer</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <!-- Interview Question Difficulty -->
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <!-- Community Question Categories -->
+    <string-array name="question_categories">
+        <item>Technical</item>
+        <item>Behavioral</item>
+        <item>Situational</item>
+        <item>General</item>
+    </string-array>
+
+    <!-- Job Sources -->
+    <string-array name="job_sources">
+        <item>LinkedIn</item>
+        <item>Indeed</item>
+        <item>Drushim</item>
+        <item>AllJobs</item>
+        <item>Company Website</item>
+        <item>Referral</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Work Models -->
+    <string-array name="work_models">
+        <item>On-site</item>
+        <item>Hybrid</item>
+        <item>Remote</item>
+    </string-array>
+
+    <!-- CV Sharing Targets -->
+    <string-array name="cv_share_options">
+        <item>WhatsApp</item>
+        <item>Email</item>
+        <item>LinkedIn</item>
+        <item>More options</item>
+    </string-array>
+
+</resources>

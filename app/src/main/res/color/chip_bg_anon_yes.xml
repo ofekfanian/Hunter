@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Anonymity "Yes" chip background: rose tint -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="#CCBE185D" />
+    <item android:color="#22BE185D" />
+</selector>

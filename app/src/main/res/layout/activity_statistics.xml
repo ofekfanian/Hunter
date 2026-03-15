@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Statistics screen — overview cards, Vico bar chart, and empty state -->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StatisticsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/background_decorative" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/common_header" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:clipToPadding="false"
+                android:paddingBottom="130dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Section Title: Overview -->
+                    <TextView
+                        style="@style/SectionTitle"
+                        android:shadowColor="@color/stat_accent_amber"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:text="@string/statistics_overview" />
+
+                    <include layout="@layout/section_statistics_overview" />
+
+                    <!-- Section Title: Insights -->
+                    <TextView
+                        android:id="@+id/statistics_insights_title"
+                        style="@style/SectionTitle"
+                        android:shadowColor="@color/stat_accent_amber"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:text="@string/statistics_insights"
+                        android:visibility="gone" />
+
+                    <!-- Insights Row: 3 small stat cards -->
+                    <LinearLayout
+                        android:id="@+id/statistics_insights_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <!-- Success Rate -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/StatCard"
+                            android:layout_marginEnd="4dp"
+                            app:strokeColor="@color/stat_accent_teal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/gradient_stat_offers"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <ImageView
+                                    style="@style/StatCardIcon"
+                                    android:importantForAccessibility="no"
+                                    android:src="@drawable/ic_trending_up"
+                                    app:tint="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/stat_value_success_rate"
+                                    style="@style/StatCardValue"
+                                    tools:text="16%" />
+
+                                <TextView
+                                    style="@style/StatCardLabel"
+                                    android:text="@string/statistics_success_rate" />
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Avg Response -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/StatCard"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+                            app:strokeColor="@color/stat_accent_blue">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/gradient_stat_interviews"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <ImageView
+                                    style="@style/StatCardIcon"
+                                    android:importantForAccessibility="no"
+                                    android:src="@drawable/ic_time"
+                                    app:tint="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/stat_value_avg_response"
+                                    style="@style/StatCardValue"
+                                    tools:text="4d" />
+
+                                <TextView
+                                    style="@style/StatCardLabel"
+                                    android:text="@string/statistics_avg_response" />
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Apps / Week -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/StatCard"
+                            android:layout_marginStart="4dp"
+                            app:strokeColor="@color/stat_accent_violet">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/gradient_stat_applied"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <ImageView
+                                    style="@style/StatCardIcon"
+                                    android:importantForAccessibility="no"
+                                    android:src="@drawable/ic_analytics"
+                                    app:tint="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/stat_value_apps_week"
+                                    style="@style/StatCardValue"
+                                    tools:text="3.2" />
+
+                                <TextView
+                                    style="@style/StatCardLabel"
+                                    android:text="@string/statistics_apps_per_week" />
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <!-- Section Title: Activity Chart -->
+                    <TextView
+                        android:id="@+id/statistics_chart_title"
+                        style="@style/SectionTitle"
+                        android:shadowColor="@color/stat_accent_amber"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:text="@string/statistics_chart_section"
+                        android:visibility="gone" />
+
+                    <!-- Chart Card -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/statistics_chart_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/glass_background"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/stat_accent_amber"
+                        app:strokeWidth="1.5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <com.patrykandpatrick.vico.views.cartesian.CartesianChartView
+                                android:id="@+id/statistics_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Section Title: Summary -->
+                    <TextView
+                        android:id="@+id/statistics_summary_title"
+                        style="@style/SectionTitle"
+                        android:shadowColor="@color/stat_accent_amber"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:text="@string/statistics_summary"
+                        android:visibility="gone" />
+
+                    <!-- Summary Card -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/statistics_summary_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/glass_background"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/stat_accent_amber"
+                        app:strokeWidth="1.5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_stat_insights"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <!-- Insight Row 1 -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingBottom="12dp">
+
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:importantForAccessibility="no"
+                                    android:src="@drawable/ic_trophy"
+                                    app:tint="@color/stat_accent_amber" />
+
+                                <TextView
+                                    android:id="@+id/stat_insight_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    tools:text="Interview rate: 44%, above average!" />
+
+                            </LinearLayout>
+
+                            <!-- Insight Row 2 -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingBottom="12dp">
+
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:importantForAccessibility="no"
+                                    android:src="@drawable/ic_trending_up"
+                                    app:tint="@color/stat_accent_amber" />
+
+                                <TextView
+                                    android:id="@+id/stat_insight_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    tools:text="Keep applying, consistency is key" />
+
+                            </LinearLayout>
+
+                            <!-- Insight Row 3 -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:importantForAccessibility="no"
+                                    android:src="@drawable/ic_lightbulb"
+                                    app:tint="@color/stat_accent_amber" />
+
+                                <TextView
+                                    android:id="@+id/stat_insight_3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    tools:text="Your success rate shows strong quality" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Empty State Card -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/statistics_empty_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="@color/glass_background"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/stat_accent_amber"
+                        app:strokeWidth="1.5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_main_statistics"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="40dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="20dp"
+                                android:alpha="0.9"
+                                android:contentDescription="@string/stat_icon"
+                                android:src="@drawable/ic_statistics"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center"
+                                android:text="@string/statistics_no_data_title"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:gravity="center"
+                                android:lineSpacingExtra="4dp"
+                                android:text="@string/statistics_no_data_subtitle"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <include layout="@layout/bottom_navigation" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/drawer_menu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

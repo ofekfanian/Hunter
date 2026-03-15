@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Blue gradient for the "Interviews" stat card -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#010D1F"
+        android:centerColor="#1E3A8A"
+        android:endColor="#2563EB"
+        android:type="linear" />
+</shape>

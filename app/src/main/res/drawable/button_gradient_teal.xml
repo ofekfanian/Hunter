@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teal gradient button for CV Manager screen actions -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#134E4A"
+        android:centerColor="#0D9488"
+        android:endColor="#5EEAD4"
+        android:type="linear" />
+    <corners android:radius="32dp" />
+    <stroke
+        android:width="1.5dp"
+        android:color="#99F6E4" />
+</shape>

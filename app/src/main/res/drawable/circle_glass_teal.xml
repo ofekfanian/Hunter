@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teal glass circle for icon backgrounds -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#220F766E" />
+    <stroke
+        android:width="1.5dp"
+        android:color="#440F766E" />
+    <size
+        android:width="72dp"
+        android:height="72dp" />
+</shape>

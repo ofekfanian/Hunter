@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Switch track: rose tint when on, glass white when off -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="#CCBE185D" />
+    <item android:color="#66FFFFFF" />
+</selector>

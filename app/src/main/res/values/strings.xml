@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- strings.xml — All user-facing text for the Hunter app -->
+<resources>
+
+    <!-- App Identity -->
+    <string name="app_name">Hunter</string>
+    <string name="tagline">Track your job applications efficiently</string>
+
+
+    <!-- Common Actions -->
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="filter">Filter</string>
+    <string name="view_all">View All</string>
+    <string name="share">Share</string>
+
+
+    <!-- Activity Titles -->
+    <string name="title_login">Login</string>
+    <string name="title_main">Hunter - Job Application Tracker</string>
+    <string name="title_job_list">My Job Applications</string>
+    <string name="title_add_job">Add New Job</string>
+    <string name="title_edit_job">Edit Job</string>
+    <string name="title_job_details">Job Details</string>
+    <string name="title_cv_manager">CV Manager</string>
+    <string name="title_community">Community</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_speed_apply">Speed Apply</string>
+
+
+    <!-- Login and Authentication -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to continue tracking</string>
+    <string name="login_tagline">Your next career opportunity awaits</string>
+    <string name="login_secure">Secure Sign-In</string>
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_btn">Sign In</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_forgot_password_message">Enter your email address and we\'ll send you a password reset link</string>
+    <string name="login_reset_email_sent">Password reset email sent successfully</string>
+    <string name="login_or">OR</string>
+    <string name="login_no_account">Don\'t have an account? </string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="login_password_toggle">Toggle password visibility</string>
+    <string name="login_google_sign_in">Sign in with Google</string>
+    <string name="login_linkedin_sign_in">Sign in with LinkedIn</string>
+
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_jobs">Jobs</string>
+    <string name="nav_cv">CV</string>
+    <string name="nav_statistics">Stats</string>
+    <string name="nav_profile">Profile</string>
+
+
+    <!-- Drawer Menu -->
+    <string name="drawer_tagline">Your Career Companion</string>
+    <string name="drawer_job_tracker">Job Tracker</string>
+    <string name="drawer_cv_manager">CV Manager</string>
+    <string name="drawer_community">Community</string>
+    <string name="drawer_interviews">Interviews</string>
+    <string name="drawer_statistics">Statistics</string>
+    <string name="drawer_profile">Profile</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_about">About</string>
+    <string name="drawer_favorites">Favorites</string>
+    <string name="drawer_logout">Logout</string>
+    <string name="no_favorites">No favorites yet</string>
+
+
+    <!-- Job Status Labels -->
+    <string name="job_status_saved">Saved</string>
+    <string name="job_status_applied">Applied</string>
+    <string name="job_status_interview">Interview</string>
+    <string name="job_status_offer">Offer</string>
+    <string name="job_status_rejected">Rejected</string>
+
+
+    <!-- Job List Screen -->
+    <string name="job_list_title">Job Tracker</string>
+    <string name="recent_applications">Recent Applications</string>
+    <string name="no_jobs_found">No Jobs Found</string>
+    <string name="add_your_first_job">Add your first job application</string>
+    <string name="add_job">Add Job</string>
+    <string name="total_jobs">Total Jobs</string>
+    <string name="search_companies">Search companies...</string>
+
+
+    <!-- Job Form (Add / Edit) -->
+    <string name="add_job_title">Add Job Application</string>
+    <string name="edit_job_title">Edit Job Application</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="application_status">Application Status</string>
+
+    <string name="job_details">Job Details</string>
+    <string name="job_status">Job Status</string>
+    <string name="status_applied">Applied</string>
+    <string name="status_screening">Screening</string>
+    <string name="status_interview">Interview</string>
+    <string name="additional_details">Additional Details</string>
+    <string name="save_job">Save Job</string>
+
+
+    <!-- Input Hints -->
+    <string name="hint_company">Company Name</string>
+    <string name="hint_position">Position Title</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_salary">Expected Salary (Optional)</string>
+    <string name="hint_cv_version">CV Version Used</string>
+    <string name="hint_notes">Additional Notes (Optional)</string>
+    <string name="hint_job_url">Job Posting URL (Optional)</string>
+    <string name="hint_contact_name">Contact Person (Optional)</string>
+    <string name="hint_source">Where did you find this job?</string>
+    <string name="hint_work_model">Work Model</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_time">Time</string>
+    <string name="hint_interviewer">Interviewer Name</string>
+
+
+    <!-- Job Details Screen -->
+    <string name="job_details_title">Job Details</string>
+    <string name="job_details_share">Share</string>
+    <string name="job_details_delete">Delete</string>
+    <string name="source_url">Source URL</string>
+    <string name="cv_version">CV Version</string>
+    <string name="notes">Notes</string>
+    <string name="job_source">Job Source</string>
+    <string name="job_favorite">Favorite</string>
+
+
+    <!-- Time Formatting -->
+    <string name="just_now">Just now</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="weeks_ago">weeks ago</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="time_2hours">2 hours ago</string>
+
+
+    <!-- Interviews -->
+    <string name="interviews_title">Interviews</string>
+    <string name="add_interview">Add Interview</string>
+    <string name="no_upcoming_interviews">No Upcoming Interviews</string>
+    <string name="add_interview_prompt">Add your first interview to get started</string>
+    <string name="interview_type">Interview Type</string>
+    <string name="interview_type_phone">Phone</string>
+    <string name="interview_type_video">Video</string>
+    <string name="interview_type_in_person">In Person</string>
+    <string name="interview_location">Location</string>
+    <string name="interview_saved_success">Interview saved successfully</string>
+    <string name="reminder_1hour">1 hour</string>
+
+    <string name="schedule_details">Schedule Details</string>
+    <string name="question_details">Content</string>
+    <string name="interview_reminder">Set Reminder</string>
+    <string name="reminder_30min">30 minutes before</string>
+    <string name="reminder_1day">1 day before</string>
+    <string name="save_interview">Save Interview</string>
+
+
+    <!-- Community -->
+    <string name="community_title">Community Intelligence</string>
+    <string name="community_no_questions">No Questions Yet</string>
+    <string name="community_first_question">Be the first to share an interview question</string>
+    <string name="add_question">Add Question</string>
+    <string name="add_question_title">New Community Post</string>
+    <string name="question_title_sample">Interview Question</string>
+    <string name="question_preview_sample">Tell me about yourself...</string>
+    <string name="save_question">Save Question</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="answers">Answers</string>
+    <string name="views">Views</string>
+    <string name="upvote">Upvote</string>
+
+    <string name="question_anonymity">Post Anonymously?</string>
+    <string name="anonymity_yes">Yes</string>
+    <string name="anonymity_no">No</string>
+    <string name="question_category">Category</string>
+    <string name="category_technical">Technical</string>
+    <string name="category_behavioral">Behavioral</string>
+    <string name="category_situational">Situational</string>
+    <string name="category_system_design">System Design</string>
+    <string name="category_leadership">Leadership</string>
+    <string name="category_hr_culture">HR / Culture</string>
+    <string name="category_problem_solving">Problem Solving</string>
+    <string name="category_coding">Coding</string>
+    <string name="error_category_required">Please select at least one category</string>
+    <string name="submit_question">Publish</string>
+    <string name="post_type">Type</string>
+    <string name="type_question">Question</string>
+    <string name="type_tip">Tip</string>
+
+
+    <!-- CV Manager -->
+    <string name="cv_manager">CV Manager</string>
+    <string name="cv_manager_title">CV Manager</string>
+    <string name="cv_manager_no_cvs">No CVs Yet</string>
+    <string name="cv_manager_upload_first">Upload your first CV to get started</string>
+    <string name="upload_cv">Upload CV</string>
+    <string name="cv_view">View</string>
+    <string name="cv_share">Share</string>
+    <string name="cv_delete_success">CV deleted successfully</string>
+
+    <string name="no_cv_files">No CV files yet</string>
+
+
+    <!-- Statistics -->
+    <string name="statistics">Statistics</string>
+    <string name="statistics_applied">Applied</string>
+    <string name="statistics_interview">Interviews</string>
+    <string name="statistics_offer">Offers</string>
+    <string name="statistics_rejected">Rejected</string>
+
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_statistics">Statistics</string>
+    <string name="stat_total_apps">Total Apps</string>
+    <string name="stat_interviews">Interviews</string>
+    <string name="stat_offers">Offers</string>
+    <string name="profile_personal_info">Personal Information</string>
+    <string name="profile_location">Location</string>
+    <string name="profile_job_goal">Job Goal</string>
+    <string name="profile_phone_label">Phone</string>
+    <string name="profile_location_label">Location</string>
+    <string name="profile_goal_label">Career Goal</string>
+    <string name="no_phone_number">No phone number</string>
+    <string name="no_email">No email</string>
+    <string name="default_user_name">User</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_updated_subtitle">Update your personal information</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_career_goal">Career Goal</string>
+    <string name="hint_district">District</string>
+    <string name="hint_linkedin">LinkedIn URL</string>
+    <string name="hint_github">GitHub URL</string>
+    <string name="no_district">Not set</string>
+    <string name="no_link">Not linked</string>
+    <string name="profile_linkedin_label">LinkedIn</string>
+    <string name="profile_github_label">GitHub</string>
+    <string name="profile_links">Links</string>
+    <string-array name="districts">
+        <item>Jerusalem District</item>
+        <item>Northern District</item>
+        <item>Haifa District</item>
+        <item>Central District</item>
+        <item>Tel Aviv District</item>
+        <item>Southern District</item>
+        <item>Judea and Samaria</item>
+    </string-array>
+
+    <string name="daily_motivation">Daily Motivation</string>
+    <string-array name="motivational_quotes">
+        <item>Every application is one step closer to your dream job.</item>
+        <item>Your next opportunity is just around the corner.</item>
+        <item>Rejection is redirection — the right role is waiting for you.</item>
+        <item>Consistency beats talent when talent does not show up.</item>
+        <item>You are one interview away from changing your life.</item>
+        <item>Great things never come from comfort zones.</item>
+        <item>The only way to do great work is to love what you do.</item>
+        <item>Believe you can and you are halfway there.</item>
+        <item>Do not watch the clock — do what it does. Keep going.</item>
+        <item>Success usually comes to those who are too busy to be looking for it.</item>
+        <item>Your career is a marathon, not a sprint.</item>
+        <item>Every expert was once a beginner.</item>
+        <item>Opportunities do not happen — you create them.</item>
+        <item>The best time to plant a tree was 20 years ago. The second best time is now.</item>
+        <item>Hard work beats talent when talent does not work hard.</item>
+        <item>Stay positive, work hard, and make it happen.</item>
+        <item>Your limitation is only your imagination.</item>
+        <item>Dream it. Wish it. Do it.</item>
+        <item>The future belongs to those who believe in the beauty of their dreams.</item>
+        <item>Do not be afraid to give up the good to go for the great.</item>
+    </string-array>
+
+    <string name="profile_updated">Profile Updated!</string>
+    <string name="profile_updated_msg">Your changes have been saved</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="no_career_goal">Not set</string>
+
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_description">App info &amp; version</string>
+    <string name="settings_logout">Logout</string>
+    <string name="settings_demo_data">Load Demo Data</string>
+    <string name="settings_demo_data_desc">Fill app with sample data for presentation</string>
+    <string name="demo_data_loaded">Demo Data Loaded!</string>
+    <string name="demo_data_loaded_msg">Sample jobs, interviews and questions added</string>
+    <string name="demo_data_confirm_title">Load Demo Data?</string>
+    <string name="demo_data_confirm_msg">This will add sample jobs, interviews and community questions to your account.</string>
+
+
+    <!-- About Screen -->
+    <string name="about_title">About Hunter</string>
+    <string name="about_app_name">Hunter</string>
+    <string name="about_tagline">Your Career Companion</string>
+    <string name="about_description">Hunter helps you track job applications, manage CVs, and prepare for interviews efficiently.</string>
+    <string name="about_version">Version 1.0.0</string>
+    <string name="about_copyright">© 2024 Hunter. All rights reserved.</string>
+    <string name="about_email_address">support@hunter.app</string>
+
+
+    <!-- Speed Apply -->
+    <string name="speed_apply_title">Quick Apply</string>
+    <string name="speed_apply_skip">Skip</string>
+    <string name="speed_apply_save">Save Job</string>
+    <string name="speed_apply_save_description">Add to tracker</string>
+    <string name="source_linkedin">LinkedIn</string>
+    <string name="source_indeed">Indeed</string>
+    <string name="source_web_link">Web Link</string>
+    <string name="location_remote">Remote</string>
+
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_title_1">Track Your Applications</string>
+    <string name="onboarding_desc_1">Keep track of all your job applications in one place with detailed status updates</string>
+    <string name="onboarding_title_2">Manage Your CVs</string>
+    <string name="onboarding_desc_2">Store and manage multiple CV versions tailored for different job positions</string>
+    <string name="onboarding_title_3">Connect with Community</string>
+    <string name="onboarding_desc_3">Share experiences and get advice from other job seekers in the community</string>
+    <string name="onboarding_image">Onboarding</string>
+
+
+    <!-- Splash Screen -->
+    <string name="splash_tagline">Your Job Hunt Companion</string>
+    <string name="splash_version">Version 1.0.0</string>
+
+
+    <!-- Dialogs -->
+    <string name="dialog_delete_title">Delete Job</string>
+    <string name="dialog_delete_message">Are you sure you want to delete this job application?</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="load_demo_message">This will load 20 sample jobs. Continue?</string>
+
+    <!-- Success dialogs -->
+    <string name="dialog_success_title">Success!</string>
+    <string name="dialog_success_message">Operation completed successfully</string>
+    <string name="dialog_success_ok">Great!</string>
+    <string name="dialog_success_job_added_title">Job Added!</string>
+    <string name="dialog_success_job_added_msg">Your job application has been saved successfully</string>
+    <string name="dialog_success_job_updated_title">Job Updated!</string>
+    <string name="dialog_success_job_updated_msg">Your changes have been saved</string>
+    <string name="dialog_success_interview_added_title">Interview Scheduled!</string>
+    <string name="dialog_success_interview_added_msg">Your interview has been added and reminder is set</string>
+    <string name="dialog_success_question_published_title">Published!</string>
+    <string name="dialog_success_question_published_msg">Your post is now live in the community</string>
+    <string name="dialog_success_speed_apply_title">Job Saved!</string>
+    <string name="dialog_success_speed_apply_msg">Quick apply saved to your tracker</string>
+    <string name="dialog_success_cv_uploaded_title">CV Uploaded!</string>
+    <string name="dialog_success_cv_uploaded_msg">Your CV is ready to share</string>
+
+
+    <!-- Buttons -->
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_retry">Retry</string>
+    <string name="ok">OK</string>
+
+
+    <!-- Filter and Sort -->
+    <string name="filter_title">Filter &amp; Sort</string>
+    <string name="filter_status">Status</string>
+    <string name="filter_date_range">Date Range</string>
+    <string name="filter_sort_by">Sort By</string>
+    <string name="filter_all_time">All Time</string>
+    <string name="filter_today">Today</string>
+    <string name="filter_this_week">This Week</string>
+    <string name="filter_this_month">This Month</string>
+    <string name="filter_newest_first">Newest First</string>
+    <string name="filter_oldest_first">Oldest First</string>
+    <string name="filter_company_az">Company (A-Z)</string>
+    <string name="filter_company_za">Company (Z-A)</string>
+    <string name="filter_by_status">By Status</string>
+    <string name="filter_clear">Clear</string>
+    <string name="filter_apply">Apply</string>
+
+
+    <!-- Common UI Elements -->
+    <string name="anonymous_user">Anonymous User</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="salary">Salary</string>
+    <string name="menu">Menu</string>
+    <string name="count_zero">0</string>
+    <string name="badge_new">NEW</string>
+    <string name="or_divider">OR</string>
+    <string name="no_jobs">No jobs</string>
+    <string name="no_questions">No questions</string>
+
+
+    <!-- Content Descriptions (accessibility) -->
+    <string name="user_avatar">User Avatar</string>
+    <string name="calendar_icon">Calendar</string>
+    <string name="location_icon">Location</string>
+    <string name="notification_icon">Notification</string>
+    <string name="reminder_icon">Reminder</string>
+    <string name="icon">Icon</string>
+
+
+    <!-- Sample / Placeholder Data -->
+    <string name="position_android_dev">Android Developer</string>
+    <string name="location_sample">Tel Aviv</string>
+    <string name="date_sample">Jan 15, 2024</string>
+    <string name="date_jan_sample">Jan 15</string>
+    <string name="company_google">Google</string>
+    <string name="initial_g">G</string>
+
+
+    <!-- Error Messages -->
+    <string name="error_company_required">Company name is required</string>
+    <string name="error_position_required">Position title is required</string>
+    <string name="error_location_required">Location is required</string>
+    <string name="error_question_required">Question is required</string>
+    <string name="error_empty_email">Email cannot be empty</string>
+    <string name="error_empty_password">Password cannot be empty</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_invalid_name">Please enter your full name</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_passwords_dont_match">Passwords do not match</string>
+    <string name="error_accept_terms">Please accept the terms and conditions</string>
+    <string name="error_required_fields">Company and Position are required</string>
+    <string name="error_required">This field is required</string>
+
+
+    <!-- Success Messages -->
+    <string name="success_job_added">Job application added successfully</string>
+    <string name="success_job_updated">Job updated successfully</string>
+    <string name="success_job_deleted">Job deleted successfully</string>
+    <string name="success_registration">Registration successful!</string>
+    <string name="success_job_saved">Job saved successfully!</string>
+    <string name="success_saved">Interview saved successfully</string>
+    <string name="question_added_success">Question shared successfully</string>
+
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Interview Reminders</string>
+    <string name="notification_channel_description">Notifications for upcoming interviews</string>
+    <string name="reminder_notification_title">Interview Reminder</string>
+    <string name="reminder_notification_body">Upcoming interview at %1$s for %2$s</string>
+    <string name="reminder_scheduled">Reminder set</string>
+
+
+    <!-- System / Non-translatable -->
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <!-- Glass card content descriptions -->
+    <string name="content_description_card_icon">Card icon</string>
+    <string name="card_title_default">Title</string>
+    <string name="card_description_default">Description</string>
+    <string name="content_description_arrow">Arrow</string>
+    <string name="company_background">Company background</string>
+    <string name="separator_dot">&#8226;</string>
+    <string name="status_icon">Status icon</string>
+    <string name="cv_manager_uploading">Uploading</string>
+    <string name="cv_percentage_zero">0%</string>
+
+    <!-- Item layout placeholders -->
+    <string name="pdf_icon">PDF icon</string>
+    <string name="cv_file_name_placeholder">CV_Resume.pdf</string>
+    <string name="cv_file_size_placeholder">2.5 MB</string>
+    <string name="cv_upload_date_placeholder">Jan 15, 2024</string>
+    <string name="time_sample">10:00 AM</string>
+    <string name="question_sample">Tell me about yourself</string>
+    <string name="upvotes_sample">12 upvotes</string>
+    <string name="user_sample">John Doe</string>
+    <string name="date_icon">Date icon</string>
+
+    <!-- About screen sections -->
+    <string name="about_section_description">Description</string>
+    <string name="about_section_features">Features</string>
+    <string name="about_section_contact">Contact Us</string>
+    <string name="about_feature_track">Track all your job applications in one place</string>
+    <string name="about_feature_cv">Manage your CV and send it quickly</string>
+    <string name="about_feature_statistics">Get insights and statistics about your job search</string>
+    <string name="about_contact_email">info@hunter-app.com</string>
+    <string name="about_email_subject">Inquiry about Hunter App</string>
+
+    <!-- Activity error strings -->
+    <string name="error_save">Failed to save</string>
+    <string name="error_load_job">Failed to load job</string>
+    <string name="error_delete_job">Failed to delete job</string>
+    <string name="error_job_not_found">Job not found</string>
+    <string name="error_save_failed">Save failed</string>
+
+    <string name="interview_question">Interview question or tip</string>
+    <string name="answer_optional">Answer / Explanation (optional)</string>
+    <string name="question_shared_success">Published successfully</string>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_with_email">Login with Email</string>
+
+    <string name="interview_calendar">Interview Calendar</string>
+    <string name="total_interviews">Total Interviews</string>
+    <string name="upcoming_interviews">Upcoming</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="tab_upcoming">Upcoming</string>
+    <string name="tab_past">Past</string>
+
+    <string name="url_not_available">N/A</string>
+    <string name="cv_format">CV Format</string>
+    <string name="notes_not_available">No notes</string>
+    <string name="share_job_subject">Job Application</string>
+    <string name="share_job_via">Share via</string>
+
+    <string name="search_and_filter">Search</string>
+    <string name="applied">Applied</string>
+    <string name="interviews">Interviews</string>
+    <string name="offers">Offers</string>
+
+    <!-- Main screen cards -->
+    <string name="main_job_tracker">Job Tracker</string>
+    <string name="main_desc_jobs">Track and manage applications</string>
+    <string name="ic_document">Document</string>
+    <string name="main_cv_manager">CV Manager</string>
+    <string name="main_desc_cv">Organize your resumes</string>
+    <string name="main_community">Community</string>
+    <string name="main_desc_community">Tips and interview questions</string>
+    <string name="main_statistics">Statistics</string>
+    <string name="main_desc_statistics">Insights and analytics</string>
+
+    <string name="stat_icon">Stat Icon</string>
+
+    <!-- Settings extras -->
+    <string name="settings_preferences">Preferences</string>
+    <string name="settings_more">More</string>
+    <string name="about_app_message">About this app</string>
+    <string name="logout_confirmation">Are you sure you want to logout?</string>
+    <string name="logout">Logout</string>
+
+    <!-- Speed Apply extras -->
+    <string name="speed_apply_job_info">Job Info</string>
+    <string name="speed_apply_company">Company</string>
+    <string name="speed_apply_position">Position</string>
+    <string name="speed_apply_location">Location</string>
+    <string name="speed_apply_url">URL</string>
+    <string name="speed_apply_skip_description">Skip and save</string>
+    <string name="source_drushim">Drushim</string>
+    <string name="source_alljobs">AllJobs</string>
+    <string name="source_shared_text">Shared</string>
+    <string name="source_referral">Referral</string>
+    <string name="source_company_website">Company Website</string>
+    <string name="source_other">Other</string>
+    <string name="work_model_remote">Remote</string>
+    <string name="work_model_hybrid">Hybrid</string>
+    <string name="work_model_onsite">On-site</string>
+    <string name="applied_on">Applied on %s</string>
+    <string name="contact_person">Contact</string>
+    <string name="job_posting_url">Job Posting</string>
+    <string name="job_type_saved">Saved</string>
+    <string name="speed_apply_description">Description</string>
+
+    <!-- Adapters and Fragments -->
+    <string name="time">Time</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="community_member">Community Member</string>
+    <string name="initial_question_mark">?</string>
+    <string name="upvotes_zero">0 upvotes</string>
+    <string name="empty_state_text">No items found</string>
+    <string name="no_past_interviews">No past interviews</string>
+
+    <!-- Validation errors -->
+    <string name="error_empty_company">Company name is required</string>
+    <string name="error_empty_position">Position is required</string>
+    <string name="error_empty_location">Location is required</string>
+    <string name="error_company_too_long">Company name is too long</string>
+    <string name="error_position_too_long">Position is too long</string>
+
+    <!-- Layout strings -->
+    <string name="app_logo">Hunter</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="onboarding_image_desc">Onboarding illustration</string>
+    <string name="onboarding_welcome">Welcome to Hunter</string>
+    <string name="onboarding_subtitle">Track your job hunt efficiently</string>
+
+    <!-- Menu strings -->
+    <string name="sync_jobs">Sync Jobs</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="job_details_save">Save</string>
+    <string name="job_details_edit">Edit</string>
+    <string name="feature_coming_soon">Feature coming soon</string>
+    <string name="statistics_title">Statistics</string>
+
+    <!-- Statistics screen -->
+    <string name="statistics_overview">Overview</string>
+    <string name="statistics_chart_section">Activity Chart</string>
+    <string name="statistics_no_data_title">No data yet</string>
+    <string name="statistics_no_data_subtitle">Add your first job application to unlock detailed insights and charts</string>
+    <string name="statistics_total_label">Total Applications</string>
+    <string name="statistics_insights">Insights</string>
+    <string name="statistics_success_rate">Success Rate</string>
+    <string name="statistics_avg_response">Avg. Reply</string>
+    <string name="statistics_apps_per_week">Apps / Week</string>
+    <string name="statistics_summary">Summary</string>
+    <string name="statistics_insight_above_avg">Interview rate: %1$d%%, above average!</string>
+    <string name="statistics_insight_below_avg">Interview rate: %1$d%%, room to improve.</string>
+    <string name="statistics_insight_keep_applying">Keep applying, consistency is key to landing offers.</string>
+    <string name="statistics_insight_strong_quality">Your success rate shows strong application quality.</string>
+    <string name="statistics_insight_keep_going">Keep going, every application gets you closer.</string>
+
+    <!-- CV Manager messages -->
+    <string name="cv_load_failed">Failed to load CVs</string>
+    <string name="cv_upload_success">Uploaded successfully</string>
+    <string name="cv_upload_failed">Upload failed</string>
+    <string name="cv_share_title">Quick Share</string>
+    <string name="cv_app_not_installed">App not installed</string>
+    <string name="cv_no_pdf_viewer">No PDF viewer found</string>
+    <string name="cv_delete_title">Delete CV</string>
+    <string name="cv_delete_message">Are you sure you want to delete this CV?</string>
+
+    <!-- Settings messages -->
+    <string name="notifications_enabled_msg">Notifications enabled</string>
+    <string name="notifications_disabled_msg">Notifications disabled</string>
+    <string name="theme_restart_required">Theme change requires restart</string>
+
+    <!-- Common UI extras -->
+    <string name="deleted">Deleted</string>
+    <string name="error_generic">Something went wrong</string>
+    <string name="search_jobs">Search jobs…</string>
+    <string name="cv_share_text">My CV: %s</string>
+    <string name="cv_email_subject">My CV - %s</string>
+    <string name="cv_email_body">Please find my CV attached.</string>
+    <string name="cv_send_via_email">Send via Email</string>
+    <string name="cv_share_chooser">Share CV</string>
+    <string name="not_specified">Not specified</string>
+    <string name="drawer_section_menu">MENU</string>
+    <string name="drawer_section_more">MORE</string>
+
+</resources>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Edit Profile dialog — photo, name, phone, district, career goal, LinkedIn, GitHub -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp"
+    app:cardBackgroundColor="@color/dialog_background"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="24dp"
+    app:strokeColor="@color/primary_purple"
+    app:strokeWidth="1.5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="24dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:shadowColor="@color/purple_glow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="14"
+                android:text="@string/edit_profile"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/profile_updated_subtitle"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <!-- Profile Image with Camera Overlay -->
+            <FrameLayout
+                android:id="@+id/edit_profile_image_container"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_glass_purple" />
+
+                <ImageView
+                    android:id="@+id/edit_profile_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/change_photo"
+                    android:src="@drawable/ic_person"
+                    app:tint="@color/white" />
+
+                <!-- Camera badge -->
+                <FrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/circle_solid_purple">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_camera"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/change_photo"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <!-- ═══ Personal Info Section ═══ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/rounded_accent_bar_purple" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/profile_personal_info"
+                    android:textColor="@color/primary_purple_light"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- Full Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_name_layout"
+                style="@style/GlassInput.Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="@color/primary_purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_name_text"
+                    style="@style/GlassInputEditText.Purple"
+                    android:hint="@string/hint_full_name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Phone -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_phone_layout"
+                style="@style/GlassInput.Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="@color/primary_purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_phone_text"
+                    style="@style/GlassInputEditText.Purple"
+                    android:hint="@string/hint_phone_number"
+                    android:inputType="phone"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- District -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_district_layout"
+                style="@style/GlassInput.Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:endIconMode="dropdown_menu"
+                app:endIconTint="@color/primary_purple"
+                app:startIconDrawable="@drawable/ic_location"
+                app:startIconTint="@color/primary_purple">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_district_text"
+                    style="@style/GlassInputEditText.Purple"
+                    android:hint="@string/hint_district"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Career Goal -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_goal_layout"
+                style="@style/GlassInput.Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:startIconDrawable="@drawable/ic_work"
+                app:startIconTint="@color/primary_purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_goal_text"
+                    style="@style/GlassInputEditText.Purple"
+                    android:hint="@string/hint_career_goal"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ═══ Links Section ═══ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/rounded_accent_bar_purple" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/profile_links"
+                    android:textColor="@color/primary_purple_light"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- LinkedIn -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_linkedin_layout"
+                style="@style/GlassInput.Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:startIconDrawable="@drawable/ic_linkedin"
+                app:startIconTint="@color/primary_purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_linkedin_text"
+                    style="@style/GlassInputEditText.Purple"
+                    android:hint="@string/hint_linkedin"
+                    android:inputType="textUri"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- GitHub -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_github_layout"
+                style="@style/GlassInput.Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                app:startIconDrawable="@drawable/ic_github"
+                app:startIconTint="@color/primary_purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_github_text"
+                    style="@style/GlassInputEditText.Purple"
+                    android:hint="@string/hint_github"
+                    android:inputType="textUri"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edit_profile_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_outline_purple"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/btn_cancel"
+                    android:textColor="@color/primary_purple_light"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/edit_profile_save"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_solid_purple"
+                    android:elevation="6dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:stateListAnimator="@null"
+                    android:text="@string/btn_save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</com.google.android.material.card.MaterialCardView>

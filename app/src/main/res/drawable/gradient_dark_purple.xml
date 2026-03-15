@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark purple gradient for screen backgrounds -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="150"
+        android:startColor="#2A1880"
+        android:centerColor="#3820A8"
+        android:endColor="#1535A0"
+        android:type="linear" />
+</shape>

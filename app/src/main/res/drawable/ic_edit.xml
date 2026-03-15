@@ -1,0 +1,21 @@
+<!-- Edit pencil icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Pencil diagonal body -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M18.5,2.5C19.3,1.7 20.7,1.7 21.5,2.5C22.3,3.3 22.3,4.7 21.5,5.5L11,16L7,17L8,13Z"/>
+    <!-- Underline -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M3,21L21,21"/>
+</vector>

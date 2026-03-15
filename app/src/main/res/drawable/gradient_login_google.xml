@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Blue-purple gradient for Google login on login screen -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#1565C0"
+        android:centerColor="#4527A0"
+        android:endColor="#6B21B7"
+        android:type="linear" />
+</shape>

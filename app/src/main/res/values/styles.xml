@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- styles.xml — Reusable component styles for Hunter -->
+<resources>
+
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <!-- FirebaseUI Login Theme -->
+    <style name="LoginTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_purple</item>
+        <item name="colorPrimaryVariant">@color/primary_purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary_purple</item>
+        <item name="android:windowBackground">@drawable/gradient_dark_purple</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#B0FFFFFF</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:statusBarColor">@color/primary_purple_dark</item>
+    </style>
+
+    <!-- Transparent Dialog (custom layout only, no default bg) -->
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- Tab Text -->
+    <style name="TabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Glass Card Styles -->
+    <style name="GlassCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">@color/glass_background</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/glass_stroke</item>
+    </style>
+
+    <style name="GlassCard.SmallMargin">
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="GlassCard.LargeMargin">
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <!-- Section Title -->
+    <style name="SectionTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+    </style>
+
+    <!-- Stat Card Styles (profile, job list, statistics) -->
+    <style name="StatCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cardBackgroundColor">@color/glass_background</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1.5dp</item>
+    </style>
+
+    <style name="StatCardIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:alpha">0.85</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <style name="StatCardValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:text">@string/count_zero</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="StatCardLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!-- Profile Info Row Styles -->
+    <style name="ProfileInfoCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="cardBackgroundColor">@color/glass_background</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/purple_stroke</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="ProfileInfoIcon">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+    </style>
+
+    <style name="ProfileInfoLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.55</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="ProfileInfoValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Chip Styles -->
+    <style name="AppChipStyle" parent="Widget.Material3.Chip.Filter">
+        <item name="android:minHeight">48dp</item>
+        <item name="chipMinHeight">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="chipSurfaceColor">@android:color/transparent</item>
+        <item name="chipCornerRadius">12dp</item>
+        <item name="chipStartPadding">12dp</item>
+        <item name="chipEndPadding">12dp</item>
+        <item name="chipStrokeColor">#442563EB</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="checkedIcon">@drawable/ic_check_circle</item>
+        <item name="checkedIconTint">@color/accent_cyan</item>
+        <item name="chipIconVisible">false</item>
+    </style>
+
+    <!-- Category segment button (inside toggle group) -->
+    <style name="CategorySegmentButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="iconGravity">top</item>
+        <item name="iconSize">22dp</item>
+        <item name="iconPadding">6dp</item>
+    </style>
+
+    <!-- Type toggle buttons (Question / Tip) -->
+    <style name="TypeToggleButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="backgroundTint">@color/toggle_bg_rose</item>
+        <item name="strokeColor">@color/chip_stroke_category</item>
+        <item name="android:textColor">@color/chip_text_category</item>
+        <item name="android:checkable">true</item>
+    </style>
+
+    <!-- Multi-select category buttons (checkable, renders in preview) -->
+    <style name="CategoryRectChip" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="backgroundTint">@color/chip_bg_category</item>
+        <item name="strokeColor">@color/chip_stroke_category</item>
+        <item name="android:textColor">@color/chip_text_category</item>
+        <item name="android:checkable">true</item>
+    </style>
+
+    <!-- Hashtag category chips -->
+    <style name="CategoryChip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:minHeight">40dp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="chipCornerRadius">20dp</item>
+        <item name="chipStrokeWidth">1.5dp</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+
+    <style name="CategoryChip.Technical">
+        <item name="chipBackgroundColor">@color/chip_bg_technical</item>
+        <item name="chipStrokeColor">#6366F1</item>
+        <item name="android:textColor">@color/chip_text_technical</item>
+    </style>
+
+    <style name="CategoryChip.Behavioral">
+        <item name="chipBackgroundColor">@color/chip_bg_behavioral</item>
+        <item name="chipStrokeColor">#10B981</item>
+        <item name="android:textColor">@color/chip_text_behavioral</item>
+    </style>
+
+    <style name="CategoryChip.Situational">
+        <item name="chipBackgroundColor">@color/chip_bg_situational</item>
+        <item name="chipStrokeColor">#F59E0B</item>
+        <item name="android:textColor">@color/chip_text_situational</item>
+    </style>
+
+    <!-- Anonymity chips (Yes / No) -->
+    <style name="AnonymityChip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:minHeight">44dp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="chipCornerRadius">22dp</item>
+        <item name="chipStrokeWidth">1.5dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipIconSize">18dp</item>
+    </style>
+
+    <style name="AnonymityChip.No">
+        <item name="chipBackgroundColor">@color/chip_bg_anon_no</item>
+        <item name="chipStrokeColor">#10B981</item>
+        <item name="android:textColor">@color/chip_text_anon_no</item>
+        <item name="chipIconTint">@color/chip_text_anon_no</item>
+    </style>
+
+    <style name="AnonymityChip.Yes">
+        <item name="chipBackgroundColor">@color/chip_bg_anon_yes</item>
+        <item name="chipStrokeColor">#BE185D</item>
+        <item name="android:textColor">@color/chip_text_anon_yes</item>
+        <item name="chipIconTint">@color/chip_text_anon_yes</item>
+    </style>
+
+    <!-- Filter chip -->
+    <style name="FilterChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:textColor">@color/white</item>
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="chipStrokeColor">@color/white</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="chipCornerRadius">12dp</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="checkedIconTint">@color/white</item>
+    </style>
+
+    <!-- Choice chip -->
+    <style name="ChoiceChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/white</item>
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="chipStrokeColor">@color/white</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="chipCornerRadius">12dp</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+
+    <!-- Glass Input Fields -->
+    <style name="GlassInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/glass_stroke</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/text_hint_white</item>
+        <item name="hintTextAppearance">@style/GlassHintAppearance</item>
+    </style>
+
+    <!-- Rose-accented (community / question screens) -->
+    <style name="GlassInput.Rose">
+        <item name="boxStrokeColor">@color/stat_accent_rose</item>
+        <item name="hintTextColor">@color/hint_rose_focused</item>
+        <item name="android:textColorHint">@color/hint_rose</item>
+        <item name="hintTextAppearance">@style/GlassHintAppearance.Rose</item>
+    </style>
+
+    <!-- Purple-accented (job screens) -->
+    <style name="GlassInput.Purple">
+        <item name="boxStrokeColor">@color/primary_purple_light</item>
+        <item name="hintTextColor">@color/hint_purple_focused</item>
+        <item name="android:textColorHint">@color/hint_purple</item>
+        <item name="hintTextAppearance">@style/GlassHintAppearance.Purple</item>
+    </style>
+
+    <!-- Blue-accented (interview screens) -->
+    <style name="GlassInput.Blue">
+        <item name="boxStrokeColor">@color/stat_accent_blue</item>
+        <item name="hintTextColor">@color/hint_blue_focused</item>
+        <item name="android:textColorHint">@color/hint_blue</item>
+        <item name="hintTextAppearance">@style/GlassHintAppearance.Blue</item>
+    </style>
+
+    <!-- Indigo-accented -->
+    <style name="GlassInput.Indigo">
+        <item name="boxStrokeColor">@color/accent_indigo</item>
+        <item name="hintTextColor">@color/hint_indigo_focused</item>
+        <item name="android:textColorHint">@color/hint_indigo</item>
+        <item name="hintTextAppearance">@style/GlassHintAppearance.Indigo</item>
+    </style>
+
+    <!-- Cyan-accented (speed apply) -->
+    <style name="GlassInput.Cyan">
+        <item name="boxStrokeColor">@color/accent_cyan</item>
+        <item name="hintTextColor">@color/hint_cyan_focused</item>
+        <item name="android:textColorHint">@color/hint_cyan</item>
+        <item name="hintTextAppearance">@style/GlassHintAppearance.Cyan</item>
+    </style>
+
+    <!-- Hint text appearances -->
+    <style name="GlassHintAppearance" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="GlassHintAppearance.Rose">
+        <item name="android:textColor">@color/hint_rose</item>
+    </style>
+
+    <style name="GlassHintAppearance.Purple">
+        <item name="android:textColor">@color/hint_purple</item>
+    </style>
+
+    <style name="GlassHintAppearance.Blue">
+        <item name="android:textColor">@color/hint_blue</item>
+    </style>
+
+    <style name="GlassHintAppearance.Cyan">
+        <item name="android:textColor">@color/hint_cyan</item>
+    </style>
+
+    <style name="GlassHintAppearance.Indigo">
+        <item name="android:textColor">@color/hint_indigo</item>
+    </style>
+
+    <!-- Glass EditText base -->
+    <style name="GlassInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/text_hint_white</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="GlassInputEditText.Rose">
+        <item name="android:textColorHint">@color/hint_rose</item>
+    </style>
+
+    <style name="GlassInputEditText.Purple">
+        <item name="android:textColorHint">@color/hint_purple</item>
+    </style>
+
+    <style name="GlassInputEditText.Blue">
+        <item name="android:textColorHint">@color/hint_blue</item>
+    </style>
+
+    <style name="GlassInputEditText.Indigo">
+        <item name="android:textColorHint">@color/hint_indigo</item>
+    </style>
+
+    <style name="GlassInputEditText.Cyan">
+        <item name="android:textColorHint">@color/hint_cyan</item>
+    </style>
+
+    <!-- Light Input Fields (for light-background dialogs) -->
+    <style name="LightInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">#F7F5FF</item>
+        <item name="boxStrokeColor">@color/primary_purple_light</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+        <item name="hintTextColor">@color/primary_purple</item>
+        <item name="android:textColorHint">#9E9E9E</item>
+        <item name="hintTextAppearance">@style/LightHintAppearance</item>
+    </style>
+
+    <style name="LightInput.Purple">
+        <item name="boxStrokeColor">@color/primary_purple_light</item>
+        <item name="hintTextColor">@color/primary_purple</item>
+    </style>
+
+    <style name="LightHintAppearance" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#9E9E9E</item>
+    </style>
+
+    <style name="LightInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#9E9E9E</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <!-- Premium Button Styles -->
+    <style name="PremiumButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:elevation">8dp</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:background">@drawable/button_gradient_premium</item>
+    </style>
+
+    <!-- Circular image (for ShapeableImageView) -->
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="PremiumButton.Compact">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
