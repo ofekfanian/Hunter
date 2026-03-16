@@ -66,23 +66,17 @@
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/01-GATEWAY-8B5CF6?style=for-the-badge" /><br/>
       <sub>Splash & Login</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/214921e1-5d9a-4d76-b119-3cf5c0a587e8" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Firebase_Auth-8B5CF6?style=flat-square" />
-      <img src="https://img.shields.io/badge/Google_Sign_In-8B5CF6?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/214921e1-5d9a-4d76-b119-3cf5c0a587e8" width="240"></video>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/02-THE_PIPELINE-6366F1?style=for-the-badge" /><br/>
       <sub>Job List & Scroll</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/4a785dc1-7928-4ccb-922c-506f7ab9649d" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Status_Filter-6366F1?style=flat-square" />
-      <img src="https://img.shields.io/badge/Live_Search-6366F1?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/4a785dc1-7928-4ccb-922c-506f7ab9649d" width="240"></video>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/03-JOB_DETAILS-A78BFA?style=for-the-badge" /><br/>
       <sub>Full Application View</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/08876437-6237-4d09-a3c2-892000064a81" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Overview-A78BFA?style=flat-square" />
-      <img src="https://img.shields.io/badge/Quick_Actions-A78BFA?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/08876437-6237-4d09-a3c2-892000064a81" width="240"></video>
     </td>
   </tr>
 </table>
@@ -94,23 +88,17 @@
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/04-ADD_JOB-7C3AED?style=for-the-badge" /><br/>
       <sub>New Application</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/49c4506b-7cb0-416e-b60e-dc0ecafcefd1" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Speed_Apply-7C3AED?style=flat-square" />
-      <img src="https://img.shields.io/badge/Zero_Friction-7C3AED?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/49c4506b-7cb0-416e-b60e-dc0ecafcefd1" width="240"></video>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/05-CV_VAULT-14B8A6?style=for-the-badge" /><br/>
       <sub>Version Management</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/cbdf1c84-c0c0-4965-8a04-900a15f7d2dc" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Upload_CVs-14B8A6?style=flat-square" />
-      <img src="https://img.shields.io/badge/Map_to_Jobs-14B8A6?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/cbdf1c84-c0c0-4965-8a04-900a15f7d2dc" width="240"></video>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/06-INTERVIEWS-EC4899?style=for-the-badge" /><br/>
       <sub>Schedule & Reminders</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/cd946e28-1b60-4290-8ad7-659635ceb811" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Calendar-EC4899?style=flat-square" />
-      <img src="https://img.shields.io/badge/Alarm_Reminders-EC4899?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/cd946e28-1b60-4290-8ad7-659635ceb811" width="240"></video>
     </td>
   </tr>
 </table>
@@ -122,23 +110,17 @@
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/07-INTEL_HUB-F43F5E?style=for-the-badge" /><br/>
       <sub>Interview Intelligence</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/ef426eb8-6a13-4698-a016-bfeee1cc6e35" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Community-F43F5E?style=flat-square" />
-      <img src="https://img.shields.io/badge/Per_Company-F43F5E?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/ef426eb8-6a13-4698-a016-bfeee1cc6e35" width="240"></video>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/08-ANALYTICS-F59E0B?style=for-the-badge" /><br/>
       <sub>Progress Dashboard</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/9b738e0a-2388-45b2-a4a6-ecea555eb6c9" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Vico_Charts-F59E0B?style=flat-square" />
-      <img src="https://img.shields.io/badge/Conversion-F59E0B?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/9b738e0a-2388-45b2-a4a6-ecea555eb6c9" width="240"></video>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/09-PROFILE-06B6D4?style=for-the-badge" /><br/>
       <sub>Career Identity</sub><br/><br/>
-      <video src="https://github.com/user-attachments/assets/ab6b58b3-50b7-4a04-a6e4-385f78c54cbb" width="240"></video><br/><br/>
-      <img src="https://img.shields.io/badge/Career_Goals-06B6D4?style=flat-square" />
-      <img src="https://img.shields.io/badge/Social_Links-06B6D4?style=flat-square" />
+      <video src="https://github.com/user-attachments/assets/ab6b58b3-50b7-4a04-a6e4-385f78c54cbb" width="240"></video>
     </td>
   </tr>
 </table>
