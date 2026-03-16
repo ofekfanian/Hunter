@@ -69,7 +69,7 @@
       <video src="https://github.com/user-attachments/assets/fbbe0ef6-0e77-4e7b-947e-fa9582050cae" width="240"></video>
       <br/><br/>
       <img src="https://img.shields.io/badge/Firebase_Auth-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
-      <img src="https://img.shields.io/badge/Google_Sign--In-4285F4?style=flat-square&logo=google&logoColor=white" />
+      <img src="https://img.shields.io/badge/Google_Sign_In-4285F4?style=flat-square&logo=google&logoColor=white" />
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/02-THE_PIPELINE-6366F1?style=for-the-badge" />
@@ -118,6 +118,37 @@
       <br/><br/>
       <img src="https://img.shields.io/badge/Vico_Charts-F59E0B?style=flat-square" />
       <img src="https://img.shields.io/badge/Conversion-F59E0B?style=flat-square" />
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/07-INTERVIEWS-EC4899?style=for-the-badge" />
+      <br/><sub>Schedule & Reminders</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/VIDEO_ID_HERE" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Calendar-EC4899?style=flat-square" />
+      <img src="https://img.shields.io/badge/Alarms-EC4899?style=flat-square" />
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/08-FAVORITES-EF4444?style=for-the-badge" />
+      <br/><sub>Saved Opportunities</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/VIDEO_ID_HERE" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Bookmarks-EF4444?style=flat-square" />
+      <img src="https://img.shields.io/badge/Quick_Access-EF4444?style=flat-square" />
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/09-PROFILE-06B6D4?style=for-the-badge" />
+      <br/><sub>Career Identity</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/VIDEO_ID_HERE" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Goals-06B6D4?style=flat-square" />
+      <img src="https://img.shields.io/badge/Links-06B6D4?style=flat-square" />
     </td>
   </tr>
 </table>
