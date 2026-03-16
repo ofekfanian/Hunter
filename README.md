@@ -124,17 +124,40 @@
 <br/><br/>
 
 <h2 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=500&height=45&lines=%F0%9F%9B%A0%EF%B8%8F+ARCHITECTURE" alt="Architecture" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=500&height=45&lines=%F0%9F%9A%80+GETTING+STARTED" alt="Getting Started" />
 </h2>
 
 <br/>
 
-| 🎨 Presentation | 🗄️ Data Layer | ⚙️ Services |
-|:---:|:---:|:---:|
-| ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) | ![Firebase Auth](https://img.shields.io/badge/Firebase_Auth-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![AlarmManager](https://img.shields.io/badge/AlarmManager-818CF8?style=flat-square) |
-| ![ViewBinding](https://img.shields.io/badge/ViewBinding-7F52FF?style=flat-square) | ![Firestore](https://img.shields.io/badge/Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![Intent Share](https://img.shields.io/badge/Intent_Share_API-818CF8?style=flat-square) |
-| ![Material 3](https://img.shields.io/badge/Material_3-6366F1?style=flat-square&logo=materialdesign&logoColor=white) | ![Cloud Storage](https://img.shields.io/badge/Cloud_Storage-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![Receivers](https://img.shields.io/badge/Broadcast_Receivers-818CF8?style=flat-square) |
-| ![Vico Charts](https://img.shields.io/badge/Vico_Charts-6366F1?style=flat-square) | ![Realtime Sync](https://img.shields.io/badge/Realtime_Sync-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![Deep Linking](https://img.shields.io/badge/Deep_Linking-818CF8?style=flat-square) |
+**Prerequisites**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Android_Studio-Hedgehog+-3DDC84?style=flat-square&logo=androidstudio&logoColor=white" />
+  <img src="https://img.shields.io/badge/Min_SDK-26_(Android_8.0)-6366F1?style=flat-square" />
+  <img src="https://img.shields.io/badge/JDK-11+-F59E0B?style=flat-square&logo=openjdk&logoColor=white" />
+</p>
+
+<br/>
+
+**Installation**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/ofekfanian/Hunter.git
+
+# 2. Open in Android Studio
+# File → Open → select the Hunter folder
+
+# 3. Add your Firebase config
+# Place your google-services.json in app/
+
+# 4. Sync & Run
+# Click "Sync Project with Gradle Files" then Run ▶️
+```
+
+<br/>
+
+> **Note:** The app requires a Firebase project with Authentication, Firestore, and Cloud Storage enabled. Contact the developer for access or set up your own Firebase project.
 
 <br/>
 
