@@ -41,13 +41,13 @@
 
 <br/>
 
-| 🔴 Problem | 🟣 Hunter's Answer |
+| 😩 Sound Familiar? | 🟣 Hunter's Fix |
 |:---|:---|
-| English-only platforms | Native support for the local tech ecosystem |
-| Expensive premium tiers | **100% free** — built for those starting out |
-| Too many fields to fill | **Speed Apply** — log a job in under 2 seconds |
-| Lost track of which CV was sent | **CV Vault** — version management per application |
-| Going into interviews blind | **Intel Hub** — community-shared interview questions |
+| Applied to 50 jobs, lost track of half | **Pipeline** every application, one dashboard |
+| Sent the wrong CV to the wrong company | **CV Vault** tag & map versions per job |
+| Got a call and forgot which role it's for | **Quick View** tap a company, see everything |
+| Walking into an interview with zero intel | **Intel Hub** real questions from real candidates |
+| No idea if your strategy is even working | **Analytics** conversion rates & status breakdown |
 
 <br/>
 
@@ -81,7 +81,7 @@
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/03-SPEED_APPLY-A78BFA?style=for-the-badge" />
-      <br/><sub>Zero-Friction Logging</sub><br/><br/>
+      <br/><sub>Zero Friction Logging</sub><br/><br/>
       <video src="https://github.com/user-attachments/assets/b24b2b5e-7d56-4cc4-a390-d09517ed923a" width="240"></video>
       <br/><br/>
       <img src="https://img.shields.io/badge/Speed_Apply-A78BFA?style=flat-square" />
@@ -195,7 +195,7 @@ com.ofek.hunter/
 
 <br/>
 
-<sub>Afeka College of Engineering · UI Development — Final Project</sub>
+<sub>Afeka College of Engineering · UI Development · Final Project</sub>
 
 <br/><br/>
 
