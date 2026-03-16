@@ -69,21 +69,17 @@
       <video src="https://github.com/user-attachments/assets/214921e1-5d9a-4d76-b119-3cf5c0a587e8" width="240"></video>
     </td>
     <td align="center" width="33%">
-      <img src="https://img.shields.io/badge/02-THE_PIPELINE-6366F1?style=for-the-badge" /><br/>
+      <img src="https://img.shields.io/badge/02-PIPELINE-6366F1?style=for-the-badge" /><br/>
       <sub>Job List & Scroll</sub><br/><br/>
       <video src="https://github.com/user-attachments/assets/4a785dc1-7928-4ccb-922c-506f7ab9649d" width="240"></video>
     </td>
     <td align="center" width="33%">
-      <img src="https://img.shields.io/badge/03-JOB_DETAILS-A78BFA?style=for-the-badge" /><br/>
+      <img src="https://img.shields.io/badge/03-DETAILS-A78BFA?style=for-the-badge" /><br/>
       <sub>Full Application View</sub><br/><br/>
       <video src="https://github.com/user-attachments/assets/08876437-6237-4d09-a3c2-892000064a81" width="240"></video>
     </td>
   </tr>
-</table>
-
-<br/>
-
-<table>
+  <tr><td colspan="3"><br/></td></tr>
   <tr>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/04-ADD_JOB-7C3AED?style=for-the-badge" /><br/>
@@ -96,24 +92,20 @@
       <video src="https://github.com/user-attachments/assets/cbdf1c84-c0c0-4965-8a04-900a15f7d2dc" width="240"></video>
     </td>
     <td align="center" width="33%">
-      <img src="https://img.shields.io/badge/06-INTERVIEWS-EC4899?style=for-the-badge" /><br/>
-      <sub>Schedule & Reminders</sub><br/><br/>
+      <img src="https://img.shields.io/badge/06-SCHEDULE-EC4899?style=for-the-badge" /><br/>
+      <sub>Interview Reminders</sub><br/><br/>
       <video src="https://github.com/user-attachments/assets/cd946e28-1b60-4290-8ad7-659635ceb811" width="240"></video>
     </td>
   </tr>
-</table>
-
-<br/>
-
-<table>
+  <tr><td colspan="3"><br/></td></tr>
   <tr>
     <td align="center" width="33%">
-      <img src="https://img.shields.io/badge/07-INTEL_HUB-F43F5E?style=for-the-badge" /><br/>
-      <sub>Interview Intelligence</sub><br/><br/>
+      <img src="https://img.shields.io/badge/07-INTEL-F43F5E?style=for-the-badge" /><br/>
+      <sub>Community Questions</sub><br/><br/>
       <video src="https://github.com/user-attachments/assets/ef426eb8-6a13-4698-a016-bfeee1cc6e35" width="240"></video>
     </td>
     <td align="center" width="33%">
-      <img src="https://img.shields.io/badge/08-ANALYTICS-F59E0B?style=for-the-badge" /><br/>
+      <img src="https://img.shields.io/badge/08-CHARTS-F59E0B?style=for-the-badge" /><br/>
       <sub>Progress Dashboard</sub><br/><br/>
       <video src="https://github.com/user-attachments/assets/9b738e0a-2388-45b2-a4a6-ecea555eb6c9" width="240"></video>
     </td>
