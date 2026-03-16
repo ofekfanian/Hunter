@@ -61,108 +61,68 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/01-GATEWAY-8B5CF6?style=for-the-badge" />
-<br/>
-<sub>Secure Onboarding</sub>
-
-<br/><br/>
-
-<video src="https://github.com/user-attachments/assets/fbbe0ef6-0e77-4e7b-947e-fa9582050cae" width="280"></video>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Firebase_Auth-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
-<img src="https://img.shields.io/badge/Google_Sign--In-4285F4?style=flat-square&logo=google&logoColor=white" />
-<img src="https://img.shields.io/badge/Guided_Onboarding-818CF8?style=flat-square" />
-
-<br/><br/>
-
----
-
-<img src="https://img.shields.io/badge/02-THE_PIPELINE-6366F1?style=for-the-badge" />
-<br/>
-<sub>Job Tracking & Speed Apply</sub>
-
-<br/><br/>
-
-<table><tr>
-  <td align="center" width="50%">
-    <video src="https://github.com/user-attachments/assets/afdb8890-4a5a-4227-9468-9130fa1db2a9" width="260"></video>
-    <br/><br/>
-    <img src="https://img.shields.io/badge/Status_Management-6366F1?style=flat-square" />
-    <img src="https://img.shields.io/badge/Search-6366F1?style=flat-square" />
-  </td>
-  <td align="center" width="50%">
-    <video src="https://github.com/user-attachments/assets/b24b2b5e-7d56-4cc4-a390-d09517ed923a" width="260"></video>
-    <br/><br/>
-    <img src="https://img.shields.io/badge/Speed_Apply-A78BFA?style=flat-square" />
-    <img src="https://img.shields.io/badge/Zero_Friction-A78BFA?style=flat-square" />
-  </td>
-</tr></table>
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/01-GATEWAY-8B5CF6?style=for-the-badge" />
+      <br/><sub>Secure Onboarding</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/fbbe0ef6-0e77-4e7b-947e-fa9582050cae" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Firebase_Auth-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+      <img src="https://img.shields.io/badge/Google_Sign--In-4285F4?style=flat-square&logo=google&logoColor=white" />
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/02-THE_PIPELINE-6366F1?style=for-the-badge" />
+      <br/><sub>Job Tracking</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/afdb8890-4a5a-4227-9468-9130fa1db2a9" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Status_Management-6366F1?style=flat-square" />
+      <img src="https://img.shields.io/badge/Search-6366F1?style=flat-square" />
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/03-SPEED_APPLY-A78BFA?style=for-the-badge" />
+      <br/><sub>Zero-Friction Logging</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/b24b2b5e-7d56-4cc4-a390-d09517ed923a" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Speed_Apply-A78BFA?style=flat-square" />
+      <img src="https://img.shields.io/badge/Zero_Friction-A78BFA?style=flat-square" />
+    </td>
+  </tr>
+</table>
 
 <br/>
 
----
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/04-CV_VAULT-14B8A6?style=for-the-badge" />
+      <br/><sub>Version Management</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/2c80813e-a6e2-4c9f-a50d-1ceed63d61cb" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Upload-14B8A6?style=flat-square" />
+      <img src="https://img.shields.io/badge/Tag-14B8A6?style=flat-square" />
+      <img src="https://img.shields.io/badge/Map_to_Jobs-14B8A6?style=flat-square" />
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/05-INTEL_HUB-F43F5E?style=for-the-badge" />
+      <br/><sub>Interview Intelligence</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/6f17fc6a-8b3f-4c77-b95d-bc51e842cbf4" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Community-F43F5E?style=flat-square" />
+      <img src="https://img.shields.io/badge/Company_Specific-F43F5E?style=flat-square" />
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/06-ANALYTICS-F59E0B?style=for-the-badge" />
+      <br/><sub>Progress Dashboard</sub><br/><br/>
+      <video src="https://github.com/user-attachments/assets/2dc3c268-a651-45f5-8c3a-dd929108de4a" width="240"></video>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Vico_Charts-F59E0B?style=flat-square" />
+      <img src="https://img.shields.io/badge/Conversion-F59E0B?style=flat-square" />
+    </td>
+  </tr>
+</table>
 
-<img src="https://img.shields.io/badge/03-CV_VAULT-14B8A6?style=for-the-badge" />
 <br/>
-<sub>Version Management</sub>
-
-<br/><br/>
-
-<video src="https://github.com/user-attachments/assets/2c80813e-a6e2-4c9f-a50d-1ceed63d61cb" width="280"></video>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Upload-14B8A6?style=flat-square" />
-<img src="https://img.shields.io/badge/Tag-14B8A6?style=flat-square" />
-<img src="https://img.shields.io/badge/Map_to_Jobs-14B8A6?style=flat-square" />
-
-<br/><br/>
-
-<sub>Never ask <i>"which resume did I send them?"</i> again.<br/>Hunter maps each CV (<code>Backend</code> · <code>Frontend</code> · <code>General</code>) to its application.</sub>
-
-<br/><br/>
-
----
-
-<img src="https://img.shields.io/badge/04-INTEL_HUB-F43F5E?style=for-the-badge" />
-<br/>
-<sub>Interview Intelligence</sub>
-
-<br/><br/>
-
-<video src="https://github.com/user-attachments/assets/6f17fc6a-8b3f-4c77-b95d-bc51e842cbf4" width="280"></video>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Community_Driven-F43F5E?style=flat-square" />
-<img src="https://img.shields.io/badge/Company_Specific-F43F5E?style=flat-square" />
-<img src="https://img.shields.io/badge/Anonymous-F43F5E?style=flat-square" />
-
-<br/><br/>
-
-<sub>Interviewing at Wix? See what others were asked.<br/>Done interviewing? Pay it forward.</sub>
-
-<br/><br/>
-
----
-
-<img src="https://img.shields.io/badge/05-ANALYTICS-F59E0B?style=for-the-badge" />
-<br/>
-<sub>Progress Dashboard</sub>
-
-<br/><br/>
-
-<video src="https://github.com/user-attachments/assets/2dc3c268-a651-45f5-8c3a-dd929108de4a" width="280"></video>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Vico_Charts-F59E0B?style=flat-square" />
-<img src="https://img.shields.io/badge/Conversion_Rates-F59E0B?style=flat-square" />
-<img src="https://img.shields.io/badge/Status_Breakdown-F59E0B?style=flat-square" />
-
-<br/><br/>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" />
 
@@ -174,18 +134,12 @@
 
 <br/>
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                   HUNTER — TECH STACK                    │
-├─────────────────┬─────────────────┬──────────────────────┤
-│  PRESENTATION   │   DATA LAYER    │      SERVICES        │
-├─────────────────┼─────────────────┼──────────────────────┤
-│  Kotlin         │  Firebase Auth  │  AlarmManager        │
-│  ViewBinding    │  Firestore      │  Intent Share API    │
-│  Material 3     │  Cloud Storage  │  Broadcast Receivers │
-│  Vico Charts    │  Real-time Sync │  Deep Linking        │
-└─────────────────┴─────────────────┴──────────────────────┘
-```
+| 🎨 Presentation | 🗄️ Data Layer | ⚙️ Services |
+|:---:|:---:|:---:|
+| ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) | ![Firebase Auth](https://img.shields.io/badge/Firebase_Auth-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![AlarmManager](https://img.shields.io/badge/AlarmManager-818CF8?style=flat-square) |
+| ![ViewBinding](https://img.shields.io/badge/ViewBinding-7F52FF?style=flat-square) | ![Firestore](https://img.shields.io/badge/Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![Intent Share](https://img.shields.io/badge/Intent_Share_API-818CF8?style=flat-square) |
+| ![Material 3](https://img.shields.io/badge/Material_3-6366F1?style=flat-square&logo=materialdesign&logoColor=white) | ![Cloud Storage](https://img.shields.io/badge/Cloud_Storage-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![Receivers](https://img.shields.io/badge/Broadcast_Receivers-818CF8?style=flat-square) |
+| ![Vico Charts](https://img.shields.io/badge/Vico_Charts-6366F1?style=flat-square) | ![Realtime Sync](https://img.shields.io/badge/Realtime_Sync-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![Deep Linking](https://img.shields.io/badge/Deep_Linking-818CF8?style=flat-square) |
 
 <br/>
 
