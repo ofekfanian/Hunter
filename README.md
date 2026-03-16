@@ -1,111 +1,73 @@
-<div align="center">
+# 🎯 Hunter | Your Ultimate Career Hunt Companion
 
-<img src="app/src/main/res/drawable/logo_hunter.png" alt="Hunter Logo" height="200" />
-
-# Hunter
-
-### *Your Career Companion*
-
-> A premium Android app for tracking job applications, managing interviews, and visualizing your career progress.
-
-<p>
-  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/Language-Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/Backend-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Design-Material%203-818CF8?style=flat&logo=materialdesign&logoColor=white" alt="Material Design" />
-  <img src="https://img.shields.io/badge/IDE-Android%20Studio-3DDC84?style=flat&logo=android-studio&logoColor=white" alt="Android Studio" />
+<p align="center">
+  <img src="app/src/main/res/drawable/logo_hunter.png" width="150" alt="Hunter Logo">
 </p>
 
-</div>
+<p align="center">
+  <strong>Streamline your job search, track interviews, and connect with the tech community.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-brightgreen.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/Language-Kotlin-blue.svg" alt="Language">
+  <img src="https://img.shields.io/badge/Design-Material_3-purple.svg" alt="Design">
+  <img src="https://img.shields.io/badge/Status-In_Development-orange.svg" alt="Status">
+</p>
 
 ---
 
-## About The Project
-
-**Hunter** helps job seekers stay organized and motivated throughout their search. Track every application, prepare for interviews, manage your CVs, and visualize your progress — all in one app. Built with a dark premium theme, custom gradient animations, and a glassmorphism-inspired UI.
-
----
-
-## Demo Videos
-
-<div align="center">
-  <table style="width:100%">
-    <tr>
-      <td align="center"><b>Splash + Login</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/splash_login.mp4" width="250" controls></video>
-      </td>
-      <td align="center"><b>Job List</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/job_list_scroll.mp4" width="250" controls></video>
-      </td>
-      <td align="center"><b>Add New Job</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/add_new_job.mp4" width="250" controls></video>
-      </td>
-    </tr>
-    <tr>
-      <td align="center"><b>Job Details</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/job_details.mp4" width="250" controls></video>
-      </td>
-      <td align="center"><b>Add Interview</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/add_interview.mp4" width="250" controls></video>
-      </td>
-      <td align="center"><b>CV Manager</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/cv_manager.mp4" width="250" controls></video>
-      </td>
-    </tr>
-    <tr>
-      <td align="center"><b>Community</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/community_new_question.mp4" width="250" controls></video>
-      </td>
-      <td align="center"><b>Statistics</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/statistics.mp4" width="250" controls></video>
-      </td>
-      <td align="center"><b>Profile</b><br><br>
-        <video src="https://github.com/ofekfanian/Hunter/raw/main/demos/profile.mp4" width="250" controls></video>
-      </td>
-    </tr>
-  </table>
-</div>
+## ✨ Overview
+**Hunter** is a modern Android application designed for job seekers in the tech industry. It provides a centralized hub to manage job applications, prepare for interviews with community-driven insights, and visualize career progress through beautiful statistics.
 
 ---
 
-## Features
+## 📸 App Showcase (Screen Recordings)
 
-* **Job Tracker:** Track applications with status management — Applied, Interview, Offer, Rejected.
-* **Interview Manager:** Schedule interviews linked to specific applications with alarm reminders.
-* **CV Manager:** Upload, store, and share multiple CV files via Firebase Cloud Storage.
-* **Community Board:** Browse and share interview questions and career tips with other users.
-* **Statistics Dashboard:** Interactive charts with Vico, success rates, insights and activity tracking.
-* **Favorites:** Save and quickly access your most interesting opportunities.
-* **Speed Apply:** Quickly log a new application with minimal input.
-* **Profile:** Manage personal details, career goals, LinkedIn and GitHub links.
+Below is a curated look at the Hunter experience. Each module is color-coded to match its unique UI theme.
 
----
+| 🌀 Splash & Security | 💼 Job Management | 📄 CV Hub |
+| :---: | :---: | :---: |
+| <font color="#8B5CF6">**VIOLET THEME**</font> | <font color="#3F51B5">**INDIGO THEME**</font> | <font color="#009688">**TEAL THEME**</font> |
+| https://github.com/user-attachments/assets/fbbe0ef6-0e77-4e7b-947e-fa9582050cae | https://github.com/user-attachments/assets/afdb8890-4a5a-4227-9468-9130fa1db2a9 | https://github.com/user-attachments/assets/2c80813e-a6e2-4c9f-a50d-1ceed63d61cb |
+| *Smooth entry & Authentication* | *Infinite scrolling & Dynamic list* | *Professional Resume management* |
 
-## Technical Implementation
+| 🤝 Community & Q&A | 📊 Insights & Analytics | 🗓️ Interview Tracking |
+| :---: | :---: | :---: |
+| <font color="#E91E63">**ROSE THEME**</font> | <font color="#FFC107">**AMBER THEME**</font> | <font color="#2196F3">**BLUE THEME**</font> |
+| [DROP `community_new_question.mp4` HERE] | https://github.com/user-attachments/assets/2dc3c268-a651-45f5-8c3a-dd929108de4a | https://github.com/user-attachments/assets/3ad30290-b003-48ce-a885-823ab420b068 |
+| *Connect and share knowledge* | *Data-driven career progress* | *Never miss a meeting* |
 
-### 1. Architecture & UI
-* **AppCompatActivity + ViewBinding**: Clean, type-safe access to UI components across all screens.
-* **Adapter Callback Pattern**: Interface-based click handling for all RecyclerView adapters.
-* **XML Animations**: Custom animation files for smooth transitions and polished interactions.
-* **Gradient Drawables**: Custom gradient XML files for the premium dark theme.
-
-### 2. Backend & Data
-* **Firebase Firestore**: Real-time cloud database for jobs, interviews, CVs, and community questions.
-* **Firebase Auth**: Google Sign-In and Email authentication via FirebaseUI.
-* **Firebase Cloud Storage**: Secure upload and retrieval of CV files.
-* **Vico 2.0**: Per-bar colored charts for application statistics visualization.
+| 🕵️ Deep Dive: Jobs | 👤 User Profile | ➕ Quick Add |
+| :---: | :---: | :---: |
+| <font color="#3F51B5">**INDIGO THEME**</font> | <font color="#7C4DFF">**VIOLET THEME**</font> | <font color="#3F51B5">**MIXED THEME**</font> |
+| https://github.com/user-attachments/assets/8e6683a8-d738-4beb-8172-3bb406d81149 | https://github.com/user-attachments/assets/3cb29e08-15d7-4087-88d4-c1fc79216afd | https://github.com/user-attachments/assets/b24b2b5e-7d56-4cc4-a390-d09517ed923a |
+| *Comprehensive job descriptions* | *Manage your personal brand* | *Fast application logging* |
 
 ---
 
-## How to Run
+## 🚀 Key Features
 
-1. Clone this repository.
-2. Open the project in **Android Studio** (Hedgehog or newer).
-3. Add your `google-services.json` to the `app/` directory.
-4. Build and run (min API 26, JDK 17+).
+* **Smart Tracking:** Organize all your job applications in one place (**Indigo**).
+* **CV Manager:** Store and swap different versions of your resume (**Teal**).
+* **Community Knowledge:** Ask and answer interview questions anonymously (**Rose**).
+* **Data Visualization:** Track your career progress with interactive charts (**Amber**).
+* **Interview Reminders:** Built-in scheduling and reminder system (**Blue**).
+* **Secure Profile:** Manage your personal data and settings with ease (**Violet**).
 
 ---
 
-<div align="center">
-    <b>Created by Ofek Fanian</b>
-</div>
+## 🛠️ Tech Stack
+- **Language:** Kotlin
+- **UI Architecture:** MVVM (Model-View-ViewModel)
+- **Design:** XML with Material Components (Material 3)
+- **Animations:** Custom XML animations & Activity Transitions
+- **Backend:** Firebase (Authentication & Firestore)
+
+---
+
+## 👨‍💻 Author
+**Ofek Fanian** *Student at Afeka College of Engineering* *User Interface Development Course Project*
+
+---
+<p align="right">Made with ❤️ for Job Hunters</p>
