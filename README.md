@@ -124,40 +124,34 @@
 <br/><br/>
 
 <h2 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=500&height=45&lines=%F0%9F%9A%80+GETTING+STARTED" alt="Getting Started" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=500&height=45&lines=%F0%9F%93%A5+INSTALLATION" alt="Installation" />
 </h2>
 
 <br/>
 
-**Prerequisites**
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Android_Studio-Hedgehog+-3DDC84?style=flat-square&logo=androidstudio&logoColor=white" />
   <img src="https://img.shields.io/badge/Min_SDK-26_(Android_8.0)-6366F1?style=flat-square" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Target_SDK-35-6366F1?style=flat-square" />
+  &nbsp;
   <img src="https://img.shields.io/badge/JDK-11+-F59E0B?style=flat-square&logo=openjdk&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Android_Studio-Hedgehog+-3DDC84?style=flat-square&logo=androidstudio&logoColor=white" />
 </p>
 
 <br/>
 
-**Installation**
-
 ```bash
-# 1. Clone the repository
 git clone https://github.com/ofekfanian/Hunter.git
-
-# 2. Open in Android Studio
-# File → Open → select the Hunter folder
-
-# 3. Add your Firebase config
-# Place your google-services.json in app/
-
-# 4. Sync & Run
-# Click "Sync Project with Gradle Files" then Run ▶️
 ```
 
-<br/>
-
-> **Note:** The app requires a Firebase project with Authentication, Firestore, and Cloud Storage enabled. Contact the developer for access or set up your own Firebase project.
+> **Step 1** &nbsp; Clone the repo
+>
+> **Step 2** &nbsp; Open in Android Studio → File → Open → select the Hunter folder
+>
+> **Step 3** &nbsp; Place your `google-services.json` in `app/`
+>
+> **Step 4** &nbsp; Sync Gradle and hit Run ▶️
 
 <br/>
 
