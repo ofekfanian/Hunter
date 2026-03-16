@@ -1,8 +1,11 @@
 <div align="center">
-<br/>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ofekfanian/Hunter/main/app/src/main/res/drawable/logo_hunter.png" alt="Hunter Logo" height="140" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1b4b,50:4338ca,100:818cf8&height=200&section=header&text=&fontSize=1" width="100%" />
+</p>
+
+<p align="center">
+  <a href="#"><img src="https://raw.githubusercontent.com/ofekfanian/Hunter/main/app/src/main/res/drawable/logo_hunter.png" alt="Hunter Logo" height="140" /></a>
 </p>
 
 <h1 align="center">
@@ -199,9 +202,9 @@ com.ofek.hunter/
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1b4b,50:4338ca,100:818cf8&height=120&section=footer" width="100%" />
 
-<br/><br/>
+<br/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=500&height=40&lines=Designed+%26+Developed+by+Ofek+Fanian" alt="Author" />
 
