@@ -1,33 +1,31 @@
 <div align="center">
-
 <br/>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ofekfanian/Hunter/main/app/src/main/res/drawable/logo_hunter.png" alt="Hunter Logo" height="150" />
+  <img src="https://raw.githubusercontent.com/ofekfanian/Hunter/main/app/src/main/res/drawable/logo_hunter.png" alt="Hunter Logo" height="140" />
 </p>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=500&height=80&lines=H+U+N+T+E+R" alt="HUNTER" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=42&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=440&height=70&lines=H+U+N+T+E+R" alt="HUNTER" />
 </h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Rajdhani&weight=600&size=22&duration=4000&pause=2000&color=A78BFA&center=true&vCenter=true&width=500&lines=Stop+Searching.+Start+Hunting.;The+Ultimate+Career+CRM." alt="Tagline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Rajdhani&weight=600&size=20&duration=4000&pause=2000&color=A78BFA&center=true&vCenter=true&width=460&lines=Stop+Searching.+Start+Hunting.;Your+Career+Pipeline%2C+Simplified." alt="Tagline" />
 </p>
 
 <p align="center">
-  <em>A premium, mobile-first CRM for job seekers. Build your pipeline, <br/>collaborate with the community, and visualize your success.</em>
+  <sub>A premium, mobile-first career CRM built for Israeli juniors.<br/>Track applications, manage CV versions, and learn from the community.</sub>
 </p>
 
 <br/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/UI-Material_3-818CF8?style=for-the-badge&logo=materialdesign&logoColor=white" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Material_3-818CF8?style=flat-square&logo=materialdesign&logoColor=white" />
+  <img src="https://img.shields.io/badge/Min_SDK-26-6366F1?style=flat-square" />
+  <img src="https://img.shields.io/badge/Target_SDK-35-6366F1?style=flat-square" />
 </p>
 
 <br/>
@@ -38,16 +36,21 @@
 
 <br/>
 
-## 💡 The Concept — The Junior's Edge
+## The Problem
 
-> Most job trackers are too complex or English-centric. **Hunter** was engineered specifically for the **Israeli student & junior developer** entering the tech force.
+Most career trackers are **English-only**, **paid**, and **built for desktop**. They require filling in dozens of fields per application — nobody has time for that during an active job hunt.
 
-| 🔴 The Problem | 🟢 Hunter's Solution |
-| :--- | :--- |
-| **English Centric** | 🇮🇱 Native support for the local tech ecosystem. |
-| **Expensive Paywalls** | ✅ **100% Free.** Professional tools for those starting out. |
-| **Data Fatigue** | ⚡ **Speed Apply:** Share a job post and log it in 1.5 seconds. |
-| **CV Confusion** | 📂 **Versioning:** Never guess which CV version you sent where. |
+**Hunter** was designed for one audience: **Israeli students and junior developers** entering the tech workforce.
+
+<br/>
+
+| Problem | Hunter's Answer |
+|:---|:---|
+| English-only platforms | Native support for the local tech ecosystem |
+| Expensive premium tiers | **100% free** — built for those starting out |
+| Too many fields to fill | **Speed Apply** — log a job in under 2 seconds |
+| Lost track of which CV was sent | **CV Vault** — version management per application |
+| Going into interviews blind | **Intel Hub** — community-shared interview questions |
 
 <br/>
 
@@ -55,91 +58,71 @@
 
 <br/>
 
-## 🎬 Feature Showcase
+## Features
 
-### ✨ GATEWAY — Secure Onboarding
+<br/>
+
+### `01` Gateway — Secure Onboarding
+
 <div align="center">
-  <table style="border: none; background: transparent;">
-    <tr>
-      <td align="center">
-        <video src="https://github.com/user-attachments/assets/fbbe0ef6-0e77-4e7b-947e-fa9582050cae" width="300" style="border-radius:24px; border: 4px solid #8B5CF6; box-shadow: 0 10px 40px #8B5CF655;"></video>
-        <br/><em><b>Firebase Auth & Onboarding Flow</b></em>
-      </td>
-    </tr>
-  </table>
+  <table><tr><td align="center">
+    <video src="https://github.com/user-attachments/assets/fbbe0ef6-0e77-4e7b-947e-fa9582050cae" width="280"></video>
+    <br/><sub><b>Firebase Auth · Google Sign-In · Guided Onboarding</b></sub>
+  </td></tr></table>
 </div>
 
 <br/>
 
-### 💼 THE PIPELINE — Job Tracking & Management
+### `02` The Pipeline — Job Tracking
+
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png">
-    <img alt="line" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
-  </picture>
-  <br/>
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <h4>${\color{#6366F1}\textbf{💼\ THE\ PIPELINE}}$</h4>
-        <small>Infinite Scroll & Status Management</small><br/><br/>
-        <video src="https://github.com/user-attachments/assets/afdb8890-4a5a-4227-9468-9130fa1db2a9" width="260" style="border-radius:18px; border: 2px solid #6366F1;"></video>
-      </td>
-      <td align="center" width="50%">
-        <h4>${\color{#6366F1}\textbf{🚀\ SPEED\ APPLY}}$</h4>
-        <small>Zero-Friction Sharing Engine</small><br/><br/>
-        <video src="https://github.com/user-attachments/assets/b24b2b5e-7d56-4cc4-a390-d09517ed923a" width="260" style="border-radius:18px; border: 2px solid #6366F1;"></video>
-      </td>
-    </tr>
-  </table>
+  <table><tr>
+    <td align="center" width="50%">
+      <video src="https://github.com/user-attachments/assets/afdb8890-4a5a-4227-9468-9130fa1db2a9" width="260"></video>
+      <br/><sub><b>Status Management · Search · Infinite Scroll</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <video src="https://github.com/user-attachments/assets/b24b2b5e-7d56-4cc4-a390-d09517ed923a" width="260"></video>
+      <br/><sub><b>Speed Apply · Zero-Friction Logging</b></sub>
+    </td>
+  </tr></table>
 </div>
 
 <br/>
 
-### 📂 CV VAULT — Version Management
+### `03` CV Vault — Version Management
+
 <div align="center">
-  <table style="border: 2px solid #14B8A6; border-radius: 20px;">
-    <tr>
-      <td align="center" style="padding: 20px;">
-        <h4>${\color{#14B8A6}\textbf{📄\ CV\ VAULT\ —\ Smart\ Cloud\ Manager}}$</h4>
-        <video src="https://github.com/user-attachments/assets/2c80813e-a6e2-4c9f-a50d-1ceed63d61cb" width="300" style="border-radius:20px;"></video>
-        <br/><br/>
-        <b>The Killer Feature:</b> Hunter maps your specific CV files (`Backend`, `Frontend`, `General`) to each job application, ensuring you always know which "pitch" you used.
-      </td>
-    </tr>
-  </table>
+  <table><tr><td align="center">
+    <video src="https://github.com/user-attachments/assets/2c80813e-a6e2-4c9f-a50d-1ceed63d61cb" width="280"></video>
+    <br/><sub><b>Upload · Tag · Map CV versions to applications</b></sub>
+    <br/><br/>
+    <sub>Never ask yourself <i>"which resume did I send them?"</i> again.<br/>Hunter maps each CV file (<code>Backend</code>, <code>Frontend</code>, <code>General</code>) to its job application.</sub>
+  </td></tr></table>
 </div>
 
 <br/>
 
-### 🤝 INTEL HUB — Interview Intelligence
+### `04` Intel Hub — Interview Intelligence
+
 <div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <h4>${\color{#F43F5E}\textbf{🤝\ INTEL\ HUB\ —\ Shared\ Wisdom}}$</h4>
-        <video src="https://github.com/user-attachments/assets/6f17fc6a-8b3f-4c77-b95d-bc51e842cbf4" width="300" style="border-radius:20px; border: 3px solid #F43F5E;"></video>
-        <br/><br/>
-        📌 Community-driven insights for specific tech companies like Wix, Google, and Playtika.
-      </td>
-    </tr>
-  </table>
+  <table><tr><td align="center">
+    <video src="https://github.com/user-attachments/assets/6f17fc6a-8b3f-4c77-b95d-bc51e842cbf4" width="280"></video>
+    <br/><sub><b>Community-driven interview prep for Israeli tech companies</b></sub>
+    <br/><br/>
+    <sub>Interviewing at Wix? See what others were asked.<br/>Done interviewing? Share your questions to help the next person.</sub>
+  </td></tr></table>
 </div>
 
 <br/>
 
-### 📊 ANALYTICS — Data Visualization
+### `05` Analytics — Progress Dashboard
+
 <div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <h4>${\color{#F59E0B}\textbf{📊\ ANALYTICS\ —\ Your\ Progress\ in\ Real-Time}}$</h4>
-        <video src="https://github.com/user-attachments/assets/2dc3c268-a651-45f5-8c3a-dd929108de4a" width="300" style="border-radius:20px; border: 3px solid #F59E0B;"></video>
-        <br/><br/>
-        Powered by <b>Vico Charts</b> — Visualize application-to-offer conversion rates.
-      </td>
-    </tr>
-  </table>
+  <table><tr><td align="center">
+    <video src="https://github.com/user-attachments/assets/2dc3c268-a651-45f5-8c3a-dd929108de4a" width="280"></video>
+    <br/><sub><b>Vico Charts · Application funnel · Status breakdown</b></sub>
+  </td></tr></table>
 </div>
 
 <br/>
@@ -148,41 +131,57 @@
 
 <br/>
 
-## 🛠️ Technical Architecture
+## Architecture
 
-<div align="center">
-
-```ascii
-┌─────────────────────────────────────────────────────────────┐
-│                    HUNTER — TECH ECOSYSTEM                  │
-├──────────────────┬──────────────────┬───────────────────────┤
-│   PRESENTATION   │    DATA LAYER    │       SERVICES        │
-├──────────────────┼──────────────────┼───────────────────────┤
-│ Kotlin & M3      │ Firebase Auth    │ AlarmManager (Cron)   │
-│ ViewBinding      │ Firestore (NoSQL)│ Intent Share Engine   │
-│ Vico Charts      │ Cloud Storage    │ Broadcast Receivers   │
-│ Motion Layout    │ Real-time Sync   │ Deep Linking API      │
-└──────────────────┴──────────────────┴───────────────────────┘
+```
+┌──────────────────────────────────────────────────────────┐
+│                   HUNTER — TECH STACK                    │
+├─────────────────┬─────────────────┬──────────────────────┤
+│  PRESENTATION   │   DATA LAYER    │      SERVICES        │
+├─────────────────┼─────────────────┼──────────────────────┤
+│  Kotlin         │  Firebase Auth  │  AlarmManager        │
+│  ViewBinding    │  Firestore      │  Intent Share API    │
+│  Material 3     │  Cloud Storage  │  Broadcast Receivers │
+│  Vico Charts    │  Real-time Sync │  Deep Linking        │
+└─────────────────┴─────────────────┴──────────────────────┘
 ```
 
-</div>
+<br/>
 
-### 🏗️ Firebase Schema (NoSQL)
+### Data Model
 
 ```yaml
-firestore_db:
-  users: { profile_info, settings, stats }
-  job_applications: 
-    - { userId, title, company, status, cv_version_id, timestamp }
-  interviews:
-    - { userId, jobId, date, reminder_enabled, location }
-  shared_community_hub:
-    - { companyName, question, category, anonymous, votes }
+Firestore:
+  users/
+    → { profile, settings, stats }
+  job_applications/
+    → { userId, title, company, status, cvVersionId, timestamp }
+  interviews/
+    → { userId, jobId, date, reminderEnabled, location, type }
+  interview_questions/
+    → { companyName, question, category, anonymous, votes }
 
-storage_bucket:
-  cv_files: 
-    - /{userId}/backend_cv.pdf
-    - /{userId}/frontend_cv.pdf
+Cloud Storage:
+  cv_files/{userId}/
+    → backend_v2.pdf
+    → frontend_v1.pdf
+    → general.pdf
+```
+
+<br/>
+
+### Project Structure
+
+```
+com.ofek.hunter/
+├── activities/       # 20 screens (Splash, Main, Jobs, Interviews, CV, Community...)
+├── adapters/         # 6 RecyclerView adapters
+├── fragments/        # 3 fragments (Jobs, Interviews, Community)
+├── models/           # JobApplication, Interview, CVFile, InterviewQuestion
+├── interfaces/       # Callback contracts between adapters and activities
+├── receivers/        # Interview reminder broadcast receiver
+├── utilities/        # Animation, DateTime, Navigation, Validation helpers
+└── App.kt            # Application entry point & notification channels
 ```
 
 <br/>
@@ -197,17 +196,17 @@ storage_bucket:
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=24&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=600&height=50&lines=Designed+%26+Developed+by+Ofek+Fanian" alt="Author" />
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Rajdhani&weight=500&size=16&duration=3500&pause=1500&color=A78BFA&center=true&vCenter=true&width=500&lines=Afeka+College+of+Engineering;UI+Development+Course+%E2%80%94+Final+Project;Built+with+%E2%9D%A4%EF%B8%8F+for+Israeli+Juniors" alt="Subtitle" />
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=500&height=40&lines=Designed+%26+Developed+by+Ofek+Fanian" alt="Author" />
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ofek-fanian/)
+<sub>Afeka College of Engineering · UI Development — Final Project</sub>
+
+<br/><br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ofek-fanian/)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ofekfanian)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ofekfanian)
 
 <br/>
 
