@@ -65,7 +65,7 @@ class JobListActivity : AppCompatActivity() {
         val quotes = resources.getStringArray(R.array.motivational_quotes)
         val dayOfYear = java.util.Calendar.getInstance().get(java.util.Calendar.DAY_OF_YEAR)
         val quote = quotes[dayOfYear % quotes.size]
-        findViewById<TextView>(R.id.daily_quote_text)?.text = "\"$quote\""
+        findViewById<TextView>(R.id.daily_quote_text)?.text = getString(R.string.quote_format, quote)
     }
 
     // Filters the job list as the user types in the search bar
@@ -91,7 +91,7 @@ class JobListActivity : AppCompatActivity() {
             }
         }
         jobAdapter.jobs = filtered
-        jobAdapter.notifyDataSetChanged()
+        jobAdapter.notifyItemRangeChanged(0, jobAdapter.itemCount)
         showContent(filtered.isEmpty())
     }
 
@@ -130,18 +130,42 @@ class JobListActivity : AppCompatActivity() {
         }
     }
 
+    // Demo jobs for presentation
+    private fun loadDemoJobs() {
+        val now = System.currentTimeMillis()
+        val day = 86_400_000L
+        allJobs = listOf(
+            JobApplication(id = "d1", company = "Wix", title = "Android Developer", location = "Tel Aviv", jobType = "Interview", salary = "32,000 ILS", source = "LinkedIn", workModel = "Hybrid", dateApplied = now - day * 1),
+            JobApplication(id = "d2", company = "Check Point", title = "Software Engineer", location = "Tel Aviv", jobType = "Screening", salary = "35,000 ILS", source = "Drushim", workModel = "On-site", dateApplied = now - day * 3),
+            JobApplication(id = "d3", company = "Mobileye", title = "Computer Vision Developer", location = "Jerusalem", jobType = "Applied", salary = "38,000 ILS", source = "Referral", workModel = "On-site", dateApplied = now - day * 5),
+            JobApplication(id = "d4", company = "Microsoft", title = "Backend Developer", location = "Herzliya", jobType = "Applied", salary = "30,000 ILS", source = "AllJobs", workModel = "Hybrid", dateApplied = now - day * 7),
+            JobApplication(id = "d5", company = "Google", title = "Full Stack Developer", location = "Tel Aviv", jobType = "Interview", salary = "45,000 ILS", source = "LinkedIn", workModel = "Hybrid", dateApplied = now - day * 10),
+            JobApplication(id = "d6", company = "Meta", title = "Mobile Engineer", location = "Tel Aviv", jobType = "Screening", salary = "42,000 ILS", source = "LinkedIn", workModel = "Remote", dateApplied = now - day * 14),
+            JobApplication(id = "d7", company = "Apple", title = "iOS Developer", location = "Herzliya", jobType = "Applied", salary = "40,000 ILS", source = "Indeed", workModel = "On-site", dateApplied = now - day * 18),
+            JobApplication(id = "d8", company = "Amazon", title = "Cloud Engineer", location = "Haifa", jobType = "Applied", salary = "36,000 ILS", source = "LinkedIn", workModel = "Hybrid", dateApplied = now - day * 21)
+        ).sortedByDescending { it.dateApplied }
+        updateStats(allJobs)
+        binding.jobListSwipeRefresh.isRefreshing = false
+        filterJobs(binding.searchText.text?.toString().orEmpty())
+    }
+
     // Fetches all jobs for the current user from Firestore
     private fun loadJobs() {
         showLoading()
-        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user?.email == "ofekfanian689@gmail.com") {
+            loadDemoJobs()
+            return
+        }
+        val userId = user?.uid ?: ""
         FirebaseFirestore.getInstance()
             .collection(Constants.FIRESTORE.JOBS)
             .whereEqualTo("userId", userId)
             .get()
             .addOnSuccessListener { result ->
                 allJobs = result.mapNotNull { doc ->
-                    doc.toObject(JobApplication::class.java)?.also { it.id = doc.id }
-                }
+                    doc.toObject(JobApplication::class.java).also { it.id = doc.id }
+                }.sortedByDescending { it.dateApplied }
                 updateStats(allJobs)
                 binding.jobListSwipeRefresh.isRefreshing = false
                 filterJobs(binding.searchText.text?.toString().orEmpty())

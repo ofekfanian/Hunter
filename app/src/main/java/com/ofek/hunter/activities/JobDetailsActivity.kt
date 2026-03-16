@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ofek.hunter.R
 import com.ofek.hunter.databinding.ActivityJobDetailsBinding
@@ -48,8 +49,38 @@ class JobDetailsActivity : AppCompatActivity() {
         AnimationHelper.exitTransition(this)
     }
 
+    // Demo jobs map for presentation
+    private fun getDemoJob(id: String): JobApplication? {
+        val now = System.currentTimeMillis()
+        val day = 86_400_000L
+        val demoJobs = mapOf(
+            "d1" to JobApplication(id = "d1", company = "Wix", title = "Android Developer", location = "Tel Aviv", jobType = "Interview", salary = "32,000 ILS", source = "LinkedIn", workModel = "Hybrid", dateApplied = now - day * 1, jobUrl = "wix.com/careers/android", contactName = "Tal Shapira", description = "Great opportunity in mobile team"),
+            "d2" to JobApplication(id = "d2", company = "Check Point", title = "Software Engineer", location = "Tel Aviv", jobType = "Screening", salary = "35,000 ILS", source = "Drushim", workModel = "On-site", dateApplied = now - day * 3, jobUrl = "checkpoint.com/careers", contactName = "Noa Cohen"),
+            "d3" to JobApplication(id = "d3", company = "Mobileye", title = "Computer Vision Developer", location = "Jerusalem", jobType = "Applied", salary = "38,000 ILS", source = "Referral", workModel = "On-site", dateApplied = now - day * 5, contactName = "Amit Levy"),
+            "d4" to JobApplication(id = "d4", company = "Microsoft", title = "Backend Developer", location = "Herzliya", jobType = "Applied", salary = "30,000 ILS", source = "AllJobs", workModel = "Hybrid", dateApplied = now - day * 7, jobUrl = "careers.microsoft.com", contactName = "Sagi Einav"),
+            "d5" to JobApplication(id = "d5", company = "Google", title = "Full Stack Developer", location = "Tel Aviv", jobType = "Interview", salary = "45,000 ILS", source = "LinkedIn", workModel = "Hybrid", dateApplied = now - day * 10, jobUrl = "google.com/careers"),
+            "d6" to JobApplication(id = "d6", company = "Meta", title = "Mobile Engineer", location = "Tel Aviv", jobType = "Screening", salary = "42,000 ILS", source = "LinkedIn", workModel = "Remote", dateApplied = now - day * 14),
+            "d7" to JobApplication(id = "d7", company = "Apple", title = "iOS Developer", location = "Herzliya", jobType = "Applied", salary = "40,000 ILS", source = "Indeed", workModel = "On-site", dateApplied = now - day * 18),
+            "d8" to JobApplication(id = "d8", company = "Amazon", title = "Cloud Engineer", location = "Haifa", jobType = "Applied", salary = "36,000 ILS", source = "LinkedIn", workModel = "Hybrid", dateApplied = now - day * 21, jobUrl = "amazon.jobs")
+        )
+        return demoJobs[id]
+    }
+
     // Fetch the job document from Firestore and display it
     private fun loadJobData() {
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user?.email == "ofekfanian689@gmail.com") {
+            val job = getDemoJob(jobId)
+            if (job != null) {
+                currentJob = job
+                displayJobData(job)
+            } else {
+                Toast.makeText(this, getString(R.string.error_load_job), Toast.LENGTH_SHORT).show()
+                finish()
+            }
+            return
+        }
+
         FirebaseFirestore.getInstance()
             .collection(Constants.FIRESTORE.JOBS)
             .document(jobId)
@@ -117,14 +148,22 @@ class JobDetailsActivity : AppCompatActivity() {
         binding.btnDeleteFeature.setOnClickListener { showDeleteConfirmation() }
     }
 
-    // Show a confirmation dialog before deleting the job
+    // Show a styled confirmation dialog before deleting the job
     private fun showDeleteConfirmation() {
-        AlertDialog.Builder(this)
-            .setTitle(R.string.dialog_delete_title)
-            .setMessage(R.string.dialog_delete_message)
-            .setPositiveButton(R.string.btn_delete) { _, _ -> deleteJob() }
-            .setNegativeButton(R.string.btn_cancel, null)
-            .show()
+        val dialogView = layoutInflater.inflate(R.layout.dialog_delete_confirmation, null)
+        val dialog = AlertDialog.Builder(this, R.style.TransparentDialog)
+            .setView(dialogView)
+            .setCancelable(true)
+            .create()
+
+        dialogView.findViewById<View>(R.id.btnCancel).setOnClickListener { dialog.dismiss() }
+        dialogView.findViewById<View>(R.id.btnDelete).setOnClickListener {
+            dialog.dismiss()
+            deleteJob()
+        }
+
+        dialog.show()
+        dialogView.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.scale_in))
     }
 
     // Delete the job document from Firestore and close the screen

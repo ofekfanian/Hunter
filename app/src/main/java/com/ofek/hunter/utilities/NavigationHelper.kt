@@ -18,8 +18,6 @@ object NavigationHelper {
 
     // Wire up bottom nav click listeners and highlight the active tab
     fun setupBottomNavigation(activity: Activity, activeTab: String) {
-        val root = activity.findViewById<View>(android.R.id.content)
-
         val navHome = activity.findViewById<View>(R.id.nav_home)
         val navStatistics = activity.findViewById<View>(R.id.nav_statistics)
         val navCv = activity.findViewById<View>(R.id.nav_cv)

@@ -56,7 +56,7 @@ class AboutActivity : AppCompatActivity() {
         }
         try {
             startActivity(intent)
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             Toast.makeText(this, "No email app found", Toast.LENGTH_SHORT).show()
         }
     }

@@ -65,9 +65,33 @@ class InterviewListFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
     }
 
+    // Demo interviews for presentation
+    private fun loadDemoInterviews() {
+        val now = System.currentTimeMillis()
+        val day = 86_400_000L
+        val demoInterviews = listOf(
+            Interview(id = "di1", jobId = "d1", companyName = "Wix", position = "Android Developer", dateTime = now + day * 3, location = "Tel Aviv", interviewerName = "Tal Shapira", notes = "Technical interview – Android & Kotlin", type = "On-site", status = "Scheduled"),
+            Interview(id = "di2", jobId = "d5", companyName = "Google", position = "Full Stack Developer", dateTime = now + day * 7, location = "Tel Aviv", interviewerName = "Yael Ben-David", notes = "Prepare system design examples", type = "Video", status = "Scheduled"),
+            Interview(id = "di3", jobId = "d2", companyName = "Check Point", position = "Software Engineer", dateTime = now + day * 10, location = "Tel Aviv", interviewerName = "Noa Cohen", notes = "HR screening call", type = "Phone", status = "Scheduled"),
+            Interview(id = "di4", jobId = "d3", companyName = "Mobileye", position = "Computer Vision Developer", dateTime = now - day * 2, location = "Jerusalem", interviewerName = "Amit Levy", notes = "Phone screen completed", type = "Phone", status = "Completed"),
+            Interview(id = "di5", jobId = "d6", companyName = "Meta", position = "Mobile Engineer", dateTime = now - day * 8, location = "Tel Aviv", interviewerName = "Dan Katz", notes = "Initial screening done", type = "Video", status = "Completed")
+        )
+        val filtered = when (listType) {
+            TYPE_UPCOMING -> demoInterviews.filter { it.isUpcoming }
+            TYPE_PAST -> demoInterviews.filter { it.isPast }
+            else -> demoInterviews
+        }
+        showInterviews(filtered)
+    }
+
     // Fetches interviews from Firestore and filters by upcoming or past
     private fun loadInterviews() {
-        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user?.email == "ofekfanian689@gmail.com") {
+            loadDemoInterviews()
+            return
+        }
+        val userId = user?.uid ?: ""
         FirebaseFirestore.getInstance()
             .collection(Constants.FIRESTORE.INTERVIEWS)
             .whereEqualTo("userId", userId)
@@ -75,7 +99,7 @@ class InterviewListFragment : Fragment() {
             .addOnSuccessListener { result ->
                 if (!isAdded) return@addOnSuccessListener
                 val all = result.mapNotNull { doc ->
-                    doc.toObject(Interview::class.java)?.also { it.id = doc.id }
+                    doc.toObject(Interview::class.java).also { it.id = doc.id }
                 }
                 val filtered = when (listType) {
                     TYPE_UPCOMING -> all.filter { it.isUpcoming }

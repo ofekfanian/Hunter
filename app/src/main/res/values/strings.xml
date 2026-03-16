@@ -650,5 +650,15 @@
     <string name="not_specified">Not specified</string>
     <string name="drawer_section_menu">MENU</string>
     <string name="drawer_section_more">MORE</string>
+    <string name="quote_format">\"%1$s\"</string>
+    <string name="demo_name">Ofek Fanian</string>
+    <string name="demo_email">ofekfanian689@gmail.com</string>
+    <string name="demo_phone">050-689-6989</string>
+    <string name="demo_location">Tel Aviv, Israel</string>
+    <string name="demo_goal">Android Developer</string>
+    <string name="demo_linkedin_display">linkedin.com/in/ofekfanian</string>
+    <string name="demo_github_display">github.com/ofekfanian/Hunter</string>
+    <string name="percent_format">%1$d%%</string>
+    <string name="days_format">%1$dd</string>
 
 </resources>

@@ -9,14 +9,6 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
  */
 object ImageLoader {
 
-    // Load a standard image into an ImageView
-    fun loadImage(imageView: ImageView, url: String) {
-        Glide.with(imageView.context)
-            .load(url)
-            .diskCacheStrategy(DiskCacheStrategy.ALL)
-            .into(imageView)
-    }
-
     // Load an image cropped into a circle (for avatars etc.)
     fun loadCircleImage(imageView: ImageView, url: String) {
         Glide.with(imageView.context)

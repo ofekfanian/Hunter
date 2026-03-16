@@ -109,10 +109,10 @@ class CVManagerActivity : AppCompatActivity() {
             .get()
             .addOnSuccessListener { result ->
                 val files = result.mapNotNull { doc ->
-                    doc.toObject(CVFile::class.java)?.also { it.id = doc.id }
+                    doc.toObject(CVFile::class.java).also { it.id = doc.id }
                 }
                 cvAdapter.cvFiles = files
-                cvAdapter.notifyDataSetChanged()
+                cvAdapter.notifyItemRangeChanged(0, cvAdapter.itemCount)
                 updateUI(files.isEmpty())
             }
             .addOnFailureListener {
@@ -128,7 +128,7 @@ class CVManagerActivity : AppCompatActivity() {
             CVFile(id = "demo3", fileName = "Ofek_Fanian_Cover_Letter.pdf", fileSize = 128_000L, uploadedAt = System.currentTimeMillis() - 86400000 * 30)
         )
         cvAdapter.cvFiles = demoFiles
-        cvAdapter.notifyDataSetChanged()
+        cvAdapter.notifyItemRangeChanged(0, cvAdapter.itemCount)
         updateUI(false)
     }
 
@@ -226,14 +226,22 @@ class CVManagerActivity : AppCompatActivity() {
         }
     }
 
-    // Show a confirmation dialog before deleting a CV
+    // Show a styled confirmation dialog before deleting a CV
     private fun confirmDelete(cv: CVFile) {
-        AlertDialog.Builder(this)
-            .setTitle(getString(R.string.cv_delete_title))
-            .setMessage(getString(R.string.cv_delete_message))
-            .setPositiveButton(getString(R.string.delete)) { _, _ -> deleteCV(cv) }
-            .setNegativeButton(getString(R.string.cancel), null)
-            .show()
+        val dialogView = layoutInflater.inflate(R.layout.dialog_delete_confirmation, null)
+        val dialog = AlertDialog.Builder(this, R.style.TransparentDialog)
+            .setView(dialogView)
+            .setCancelable(true)
+            .create()
+
+        dialogView.findViewById<View>(R.id.btnCancel).setOnClickListener { dialog.dismiss() }
+        dialogView.findViewById<View>(R.id.btnDelete).setOnClickListener {
+            dialog.dismiss()
+            deleteCV(cv)
+        }
+
+        dialog.show()
+        dialogView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.scale_in))
     }
 
     // Delete the CV record from Firestore and refresh the list

@@ -162,20 +162,22 @@
 
         </LinearLayout>
 
-        <!-- Badges Row: Status + Salary + CV -->
-        <LinearLayout
+        <!-- Badges Row: Status + Salary + CV (wraps to next line) -->
+        <com.google.android.flexbox.FlexboxLayout
             android:id="@+id/status_badges_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            app:flexWrap="wrap"
+            app:alignItems="center"
+            app:flexDirection="row">
 
             <!-- Status Badge -->
             <LinearLayout
                 android:id="@+id/status_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/badge_status_modern"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -211,6 +213,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/chip_salary"
                 android:fontFamily="@font/montserrat_bold"
                 android:paddingStart="10dp"
@@ -229,6 +232,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/chip_salary"
                 android:fontFamily="@font/montserrat_bold"
                 android:paddingStart="10dp"
@@ -247,6 +251,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/chip_cv_version"
                 android:fontFamily="@font/montserrat_medium"
                 android:paddingStart="10dp"
@@ -265,6 +270,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/chip_cv_version"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
@@ -295,7 +301,7 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </com.google.android.flexbox.FlexboxLayout>
 
     </LinearLayout>
 

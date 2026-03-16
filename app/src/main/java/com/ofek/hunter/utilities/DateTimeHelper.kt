@@ -11,7 +11,7 @@ object DateTimeHelper {
 
     // Format timestamp as dd/MM/yyyy
     fun formatDateShort(timestamp: Long): String {
-        val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+        val sdf = SimpleDateFormat("dd/MM/yy", Locale.getDefault())
         return sdf.format(Date(timestamp))
     }
 

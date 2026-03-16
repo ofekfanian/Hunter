@@ -2,6 +2,7 @@ package com.ofek.hunter.activities
 
 import android.content.Intent
 import android.net.Uri
+import androidx.core.net.toUri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -117,15 +118,15 @@ class ProfileActivity : AppCompatActivity() {
     // Fill profile fields with provided data
     private fun populateProfile(phone: String, district: String, goal: String, linkedin: String, github: String, imageUrl: String) {
         findViewById<TextView>(R.id.profile_phone_value)?.text =
-            if (phone.isNotEmpty()) phone else getString(R.string.no_phone_number)
+            phone.ifEmpty { getString(R.string.no_phone_number) }
         findViewById<TextView>(R.id.profile_location_value)?.text =
-            if (district.isNotEmpty()) district else getString(R.string.no_district)
+            district.ifEmpty { getString(R.string.no_district) }
         findViewById<TextView>(R.id.profile_goal_value)?.text =
-            if (goal.isNotEmpty()) goal else getString(R.string.no_career_goal)
+            goal.ifEmpty { getString(R.string.no_career_goal) }
         findViewById<TextView>(R.id.profile_linkedin_value)?.text =
-            if (linkedin.isNotEmpty()) linkedin else getString(R.string.no_link)
+            linkedin.ifEmpty { getString(R.string.no_link) }
         findViewById<TextView>(R.id.profile_github_value)?.text =
-            if (github.isNotEmpty()) github else getString(R.string.no_link)
+            github.ifEmpty { getString(R.string.no_link) }
 
         setupLinkCard(R.id.profile_card_linkedin, linkedin)
         setupLinkCard(R.id.profile_card_github, github)
@@ -138,11 +139,11 @@ class ProfileActivity : AppCompatActivity() {
 
     // Show demo profile when no Firestore data exists
     private fun loadDemoProfile() {
-        binding.profileTitle.text = "Ofek Fanian"
-        binding.profileSubtitle.text = "ofekfanian689@gmail.com"
+        binding.profileTitle.text = getString(R.string.demo_name)
+        binding.profileSubtitle.text = getString(R.string.demo_email)
         binding.profileImage.setImageResource(R.drawable.ic_imag_profile)
         binding.profileImage.imageTintList = null
-        binding.profileImage.scaleType = android.widget.ImageView.ScaleType.MATRIX
+        binding.profileImage.scaleType = ImageView.ScaleType.MATRIX
         binding.profileImage.post {
             val drawable = binding.profileImage.drawable ?: return@post
             val viewW = binding.profileImage.width.toFloat()
@@ -159,23 +160,22 @@ class ProfileActivity : AppCompatActivity() {
             binding.profileImage.imageMatrix = matrix
         }
 
-        findViewById<TextView>(R.id.profile_phone_value)?.text = "050-689-6989"
-        findViewById<TextView>(R.id.profile_location_value)?.text = "Tel Aviv, Israel"
-        findViewById<TextView>(R.id.profile_goal_value)?.text = "Android Developer"
-        findViewById<TextView>(R.id.profile_linkedin_value)?.text = "linkedin.com/in/ofekfanian"
-        findViewById<TextView>(R.id.profile_github_value)?.text = "github.com/ofekfanian"
+        findViewById<TextView>(R.id.profile_phone_value)?.text = getString(R.string.demo_phone)
+        findViewById<TextView>(R.id.profile_location_value)?.text = getString(R.string.demo_location)
+        findViewById<TextView>(R.id.profile_goal_value)?.text = getString(R.string.demo_goal)
+        findViewById<TextView>(R.id.profile_linkedin_value)?.text = getString(R.string.demo_linkedin_display)
+        findViewById<TextView>(R.id.profile_github_value)?.text = getString(R.string.demo_github_display)
 
         setupLinkCard(R.id.profile_card_linkedin, "https://linkedin.com/in/ofekfanian")
-        setupLinkCard(R.id.profile_card_github, "https://github.com/ofekfanian")
+        setupLinkCard(R.id.profile_card_github, "https://github.com/ofekfanian/Hunter")
     }
 
     // Make a link card open the URL in the browser when tapped
     private fun setupLinkCard(cardId: Int, url: String) {
         findViewById<View>(cardId)?.setOnClickListener {
             if (url.isNotEmpty()) {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(
-                    if (url.startsWith("http")) url else "https://$url"
-                ))
+                val fullUrl = if (url.startsWith("http")) url else "https://$url"
+                val intent = Intent(Intent.ACTION_VIEW, fullUrl.toUri())
                 startActivity(intent)
             }
         }
@@ -204,9 +204,9 @@ class ProfileActivity : AppCompatActivity() {
 
     // Show demo statistics
     private fun loadDemoStats() {
-        findViewById<TextView>(R.id.stat_total_value).text = "24"
-        findViewById<TextView>(R.id.stat_interviews_value).text = "12"
-        findViewById<TextView>(R.id.stat_offers_value).text = "3"
+        findViewById<TextView>(R.id.stat_total_value).text = "8"
+        findViewById<TextView>(R.id.stat_interviews_value).text = "2"
+        findViewById<TextView>(R.id.stat_offers_value).text = "1"
     }
 
     // Show the edit dialog pre-filled with current profile data

@@ -146,7 +146,7 @@ class EditJobActivity : AppCompatActivity() {
                     finish()
                 }
             }
-            .addOnFailureListener { ex ->
+            .addOnFailureListener {
                 binding.editJobProgressBar.visibility = View.GONE
                 Toast.makeText(this, getString(R.string.error_generic), Toast.LENGTH_SHORT).show()
                 finish()
@@ -271,7 +271,7 @@ class EditJobActivity : AppCompatActivity() {
                     R.string.dialog_success_job_updated_msg
                 )
             }
-            .addOnFailureListener { ex ->
+            .addOnFailureListener {
                 binding.editJobProgressBar.visibility = View.GONE
                 binding.editJobForm.visibility = View.VISIBLE
                 Snackbar.make(binding.root, getString(R.string.error_generic), Snackbar.LENGTH_LONG).show()

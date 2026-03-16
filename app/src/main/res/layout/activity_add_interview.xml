@@ -142,7 +142,7 @@
                                 android:layout_weight="1"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="16dp"
-                                app:startIconDrawable="@drawable/ic_calendar"
+                                app:startIconDrawable="@drawable/ic_alarm"
                                 app:startIconTint="@color/stat_accent_blue">
 
                                 <com.google.android.material.textfield.TextInputEditText

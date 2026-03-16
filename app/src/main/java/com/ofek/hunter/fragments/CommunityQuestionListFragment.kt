@@ -80,7 +80,7 @@ class CommunityQuestionListFragment : Fragment() {
             .addOnSuccessListener { result ->
                 if (!isAdded) return@addOnSuccessListener
                 val all = result.mapNotNull { doc ->
-                    doc.toObject(InterviewQuestion::class.java)?.also { it.id = doc.id }
+                    doc.toObject(InterviewQuestion::class.java).also { it.id = doc.id }
                 }
                 val filtered = when {
                     filterCompany != null -> all.filter { it.companyName.equals(filterCompany, ignoreCase = true) }

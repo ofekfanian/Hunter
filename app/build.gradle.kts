@@ -91,6 +91,9 @@ dependencies {
     // SwipeRefreshLayout
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
+    // FlexboxLayout (badge wrapping)
+    implementation("com.google.android.flexbox:flexbox:3.0.0")
+
     // ViewPager2 (for onboarding screens)
     implementation("androidx.viewpager2:viewpager2:1.1.0")
 

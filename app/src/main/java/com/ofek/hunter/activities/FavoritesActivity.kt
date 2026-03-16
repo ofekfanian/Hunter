@@ -67,7 +67,7 @@ class FavoritesActivity : AppCompatActivity() {
                     .addOnSuccessListener {
                         job.isSaved = false
                         jobAdapter.jobs = jobAdapter.jobs.filter { it.isSaved }
-                        jobAdapter.notifyDataSetChanged()
+                        jobAdapter.notifyItemRangeChanged(0, jobAdapter.itemCount)
                         showContent(jobAdapter.jobs.isEmpty())
                     }
             }
@@ -88,10 +88,10 @@ class FavoritesActivity : AppCompatActivity() {
             .get()
             .addOnSuccessListener { result ->
                 val favorites = result.mapNotNull { doc ->
-                    doc.toObject(JobApplication::class.java)?.also { it.id = doc.id }
+                    doc.toObject(JobApplication::class.java).also { it.id = doc.id }
                 }
                 jobAdapter.jobs = favorites
-                jobAdapter.notifyDataSetChanged()
+                jobAdapter.notifyItemRangeChanged(0, jobAdapter.itemCount)
                 showContent(favorites.isEmpty())
             }
             .addOnFailureListener {

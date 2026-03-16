@@ -49,14 +49,14 @@ class AddJobActivity : AppCompatActivity() {
         // Set up drawer menu navigation
         DrawerHelper.setupDrawer(this, binding.drawerLayout)
         binding.statusChipGroup.setOnCheckedStateChangeListener { _, checkedIds ->
-            if (checkedIds.isNotEmpty()) {
-                selectedStatus = when (checkedIds[0]) {
+            selectedStatus = if (checkedIds.isNotEmpty()) {
+                when (checkedIds[0]) {
                     R.id.chip_screening -> "Screening"
                     R.id.chip_interview -> "Interview"
                     else -> "Applied"
                 }
             } else {
-                selectedStatus = "Applied"
+                "Applied"
             }
         }
         binding.sourceChipGroup.setOnCheckedStateChangeListener { _, checkedIds ->

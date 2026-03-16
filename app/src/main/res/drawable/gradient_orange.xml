@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Orange accent gradient -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient
-        android:startColor="@color/accent_orange"
-        android:endColor="#FF6B35"
-        android:angle="135" />
-</shape>

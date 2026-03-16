@@ -115,7 +115,7 @@ class StatisticsActivity : AppCompatActivity() {
     }
 
     private fun loadDemoStatistics() {
-        showStatistics(applied = 18, interview = 8, offer = 3, rejected = 5)
+        showStatistics(applied = 4, interview = 2, offer = 1, rejected = 1)
     }
 
     private fun showStatistics(applied: Int, interview: Int, offer: Int, rejected: Int) {
@@ -134,12 +134,12 @@ class StatisticsActivity : AppCompatActivity() {
             // Show insights row
             binding.statisticsInsightsTitle.visibility = View.VISIBLE
             binding.statisticsInsightsRow.visibility = View.VISIBLE
-            setupInsightCards(applied, interview, offer, rejected, total)
+            setupInsightCards(offer, total)
 
             // Show summary
             binding.statisticsSummaryTitle.visibility = View.VISIBLE
             binding.statisticsSummaryCard.visibility = View.VISIBLE
-            setupSummary(applied, interview, offer, rejected, total)
+            setupSummary(interview, offer, total)
 
             lifecycleScope.launch(Dispatchers.Main) {
                 chartModelProducer.runTransaction {
@@ -157,20 +157,20 @@ class StatisticsActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupInsightCards(applied: Int, interview: Int, offer: Int, rejected: Int, total: Int) {
+    private fun setupInsightCards(offer: Int, total: Int) {
         val successRate = if (total > 0) (offer * 100) / total else 0
-        binding.statValueSuccessRate.text = "${successRate}%"
+        binding.statValueSuccessRate.text = getString(R.string.percent_format, successRate)
 
         // Avg response in days (demo: 4d, real: estimate based on data)
         val avgDays = if (total >= 5) (total / 5).coerceIn(1, 14) else 4
-        binding.statValueAvgResponse.text = "${avgDays}d"
+        binding.statValueAvgResponse.text = getString(R.string.days_format, avgDays)
 
         // Apps per week (estimate: total / 4 weeks)
-        val appsPerWeek = if (total > 0) String.format("%.1f", total / 4.0) else "0"
+        val appsPerWeek = if (total > 0) String.format(java.util.Locale.US, "%.1f", total / 4.0) else "0"
         binding.statValueAppsWeek.text = appsPerWeek
     }
 
-    private fun setupSummary(applied: Int, interview: Int, offer: Int, rejected: Int, total: Int) {
+    private fun setupSummary(interview: Int, offer: Int, total: Int) {
         val interviewRate = if (total > 0) (interview * 100) / total else 0
         val successRate = if (total > 0) (offer * 100) / total else 0
 

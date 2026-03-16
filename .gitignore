@@ -70,11 +70,10 @@ proguard/
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
 
-# Claude Code
+# IDE config
 .claude/
 
 # Temp / scratch files
-hunter_project_for_ai.txt
 Invalidate/
 check_unused.sh.save
 activity_edit_job.xml
